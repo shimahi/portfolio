@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: __dirname + '/docs',
-    filename: 'js/main.js'
+    filename: 'static/script.js'
   },
   module: {
     rules: [
@@ -40,7 +40,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'css/style.css'
+      filename: 'static/style.css'
     })
   ],
   resolve: {
