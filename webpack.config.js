@@ -45,5 +45,9 @@ module.exports = {
   ],
   resolve: {
     extensions: ['.js', '.jsx', '.json']
+  },
+  devServer: {
+    contentBase: "docs",
+    open: true
   }
 }
