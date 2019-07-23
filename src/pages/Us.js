@@ -6,7 +6,7 @@ export default class Skill extends Component {
 
         return (
             <Col className="lightblue my-4 p-4">
-                <h1>Skill</h1>
+                <h1>paroleise</h1>
 
                 <Card className="mx-2 my-4">
                     <CardBody>
