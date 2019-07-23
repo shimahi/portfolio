@@ -1,0 +1,154 @@
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  background-color: black;
+}
+
+.header {
+  z-index: 4;
+  color:#00FF00;
+  background-color: black;
+  text-shadow: 0 0 25px #2EFE2E, 0 0 20px #2EFE2E, 0 0 0.40px #2EFE2E;
+  border: solid #00FF00;
+  box-shadow: 0 0 20px #2EFE2E, 0 0 15px #2EFE2E, 0 0 0.35px #2EFE2E;
+}
+
+.header a {
+  color:#999999;
+  text-shadow: 0 0 15px #999999, 0 0 10px #999999, 0 0 0.10px #999999;
+  transition: ease-in-out color .40s;
+}
+
+.trans-green:hover{
+  color:#00FF00;
+  text-shadow: 0 0 25px #2EFE2E, 0 0 20px #2EFE2E, 0 0 0.40px #2EFE2E;
+  text-decoration: none;
+}
+
+.trans-red:hover {
+  color:#FE2E2E;
+  text-shadow: 0 0 25px #FA5858, 0 0 20px #FA5858, 0 0 0.40px #FA5858;
+  text-decoration: none;
+}
+
+.trans-yellow:hover {
+  color:#F7FE2E;
+  text-shadow: 0 0 25px #F4FA58, 0 0 20px #F4FA58, 0 0 0.40px #F4FA58;
+  text-decoration: none;
+}
+
+.trans-lightblue:hover {
+  color:#2EFEF7;
+  text-shadow: 0 0 25px #58FAF4, 0 0 20px #58FAF4, 0 0 0.40px #58FAF4;
+  text-decoration: none;
+}
+
+.trans-blue:hover {
+  color:#0080FF;
+  text-shadow: 0 0 25px #58ACFA, 0 0 20px #58ACFA, 0 0 0.40px #58ACFA;
+  text-decoration: none;
+}
+
+.trans-purple:hover{
+  color:#CC2EFA;
+  text-shadow: 0 0 25px #D358F7, 0 0 20px #D358F7, 0 0 0.40px #D358F7;
+  text-decoration: none;
+}
+
+.green {
+  color:#00FF00;
+  text-shadow: 0 0 25px #2EFE2E, 0 0 20px #2EFE2E, 0 0 0.40px #2EFE2E;
+  border: solid #00FF00;
+  box-shadow: 0 0 20px #2EFE2E, 0 0 15px #2EFE2E, 0 0 0.35px #2EFE2E;
+}
+
+.green-border {
+  border: solid #00FF00;
+  box-shadow: 0 0 20px #2EFE2E, 0 0 15px #2EFE2E, 0 0 0.35px #2EFE2E;
+}
+
+.red {
+  color:#FE2E2E;
+  text-shadow: 0 0 25px #FA5858, 0 0 20px #FA5858, 0 0 0.40px #FA5858;
+  border: solid #FE2E2E;
+  box-shadow: 0 0 20px #FA5858, 0 0 15px #FA5858, 0 0 0.35px #FA5858;
+}
+
+.yellow {
+  color:#F7FE2E;
+  text-shadow: 0 0 25px #F4FA58, 0 0 20px #F4FA58, 0 0 0.40px #F4FA58;
+  border: solid #F7FE2E;
+  box-shadow: 0 0 20px #F4FA58, 0 0 15px #F4FA58, 0 0 0.35px #F4FA58;
+}
+
+.yellow-border {
+  border: solid #F7FE2E;
+  box-shadow: 0 0 20px #F4FA58, 0 0 15px #F4FA58, 0 0 0.35px #F4FA58;
+}
+
+.lightblue {
+  color:#2EFEF7;
+  text-shadow: 0 0 25px #58FAF4, 0 0 20px #58FAF4, 0 0 0.40px #58FAF4;
+  border: solid #2EFEF7;
+  box-shadow: 0 0 20px #58FAF4, 0 0 15px #58FAF4, 0 0 0.35px #58FAF4;
+}
+
+.blue {
+  color:#0080FF;
+  text-shadow: 0 0 35px #58ACFA, 0 0 30px #58ACFA, 0 0 0.40px #58ACFA;
+  border: solid #0080FF;
+  box-shadow: 0 0 20px #58ACFA, 0 0 15px #58ACFA, 0 0 0.35px #58ACFA;
+}
+
+.purple {
+  color:#CC2EFA;
+  text-shadow: 0 0 25px #D358F7, 0 0 20px #D358F7, 0 0 0.40px #D358F7;
+  border: solid #CC2EFA;
+  box-shadow: 0 0 20px #D358F7, 0 0 15px #D358F7, 0 0 0.35px #D358F7;
+}
+
+.purple-border {
+  border: solid #CC2EFA;
+  box-shadow: 0 0 20px #D358F7, 0 0 15px #D358F7, 0 0 0.35px #D358F7;
+}
+
+.red > .card {
+  color:#FE2E2E;
+  background-color: black;
+  text-shadow: 0 0 25px #FA5858, 0 0 20px #FA5858, 0 0 0.40px #FA5858;
+  border: solid #FE2E2E;
+  box-shadow: 0 0 20px #FA5858, 0 0 15px #FA5858, 0 0 0.35px #FA5858;
+}
+
+.red > .card a {
+  color:#FE2E2E;
+  text-shadow: 0 0 25px #FA5858, 0 0 20px #FA5858, 0 0 0.40px #FA5858;
+}
+
+.lightblue > .card {
+  color:#2EFEF7;
+  background-color: black;
+  text-shadow: 0 0 25px #58FAF4, 0 0 20px #58FAF4, 0 0 0.40px #58FAF4;
+  border: solid #2EFEF7;
+  box-shadow: 0 0 20px #58FAF4, 0 0 15px #58FAF4, 0 0 0.35px #58FAF4;
+}
+
+.blue > .card {
+  color:#0080FF;
+  background-color: black;
+  text-shadow: 0 0 35px #58ACFA, 0 0 30px #58ACFA, 0 0 0.40px #58ACFA;
+  border: solid #0080FF;
+  box-shadow: 0 0 20px #58ACFA, 0 0 15px #58ACFA, 0 0 0.35px #58ACFA;
+}
+
+.green a {
+  color:#00FF00;
+  text-shadow: 0 0 15px #2EFE2E, 0 0 10px #2EFE2E, 0 0 0.30px #2EFE2E;
+}

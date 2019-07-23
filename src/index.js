@@ -1,22 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Link } from 'react-router-dom'
-import './scss/style.scss';
-
-import Header from './components/Header';
-import Me from './components/Me';
-import Mine from './components/Mine';
+import './bootstrap.min.css';
+import './index.css';
 import App from './App';
+import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <App />,
-  document.querySelector('#app')
-);
+ReactDOM.render(<App />, document.getElementById('root'));
 
-
-/*
-<Router history={browserHistory}>
-    <Route path="/" component={App} />
-</Router>
-
-*/
+serviceWorker.unregister();
