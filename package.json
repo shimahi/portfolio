@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --history-api-fallback"
+    "start": "webpack-dev-server --history-api-fallback",
+    "deploy": "webpack && gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -18,13 +19,14 @@
   "bugs": {
     "url": "https://github.com/shimahi/portfolio/issues"
   },
-  "homepage": "https://github.com/shimahi/portfolio",
+  "homepage": "https://shimahi.github.io/portfolio/",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.0.0",
+    "gh-pages": "^2.0.1",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
