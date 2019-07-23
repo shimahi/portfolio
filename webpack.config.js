@@ -5,7 +5,7 @@ module.exports = {
   devtool: 'inline-source-map',
   entry: './src/index.js',
   output: {
-    path: __dirname + '/docs',
+    path: __dirname + '/build',
     filename: 'static/script.js'
   },
   module: {
@@ -47,7 +47,7 @@ module.exports = {
     extensions: ['.js', '.jsx', '.json']
   },
   devServer: {
-    contentBase: "docs",
+    contentBase: "build",
     open: true
   }
 }
