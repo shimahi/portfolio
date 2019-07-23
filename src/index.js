@@ -7,7 +7,6 @@ import Header from './components/Header';
 import Me from './components/Me';
 import Mine from './components/Mine';
 import App from './App';
-import { createHistory, useBasename } from "history";
 
 ReactDOM.render(
   <App />,
