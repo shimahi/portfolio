@@ -1,17 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './scss/style.scss';
 
-class Hello extends React.Component {
+import Header from './components/Header';
+import Me from './components/Me';
+import Mine from './components/Mine';
+
+class App extends React.Component {
   render() {
-    return(
-      <h1>Hello, World!</h1>
+    return (
+      <div className="App">
+        <Router>
+          <Header />
+          <Route path='/Me' component={Me}/>
+          <Route path='/Mine' component={Mine}/>
+        </Router>
+
+        {/*<Content />
+        <Footer />*/}
+      </div>
     );
   }
 }
 
 
 ReactDOM.render(
-  <Hello />,
+  <App />,
   document.querySelector('#app')
 );
