@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Col, Card, CardText, CardBody, CardTitle } from 'reactstrap';
 
-export default class Activities extends Component {
+export default class Mine extends Component {
   render() {
     return (
       <Col className="red my-4 p-4">
