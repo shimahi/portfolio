@@ -8,9 +8,9 @@ export default class Tags extends React.Component {
       <li>{skill}</li>
     );
     return(
-      <div>
+      <ul>
         {listItems}
-      </div>
+      </ul>
     );
   }
 }
