@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 
 import './scss/style.scss';
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
-import Header from './components/Header';
-import Main from './components/Main'
+import Header from './Header';
+import Main from './Main'
 import * as serviceWorker from './serviceWorker';
 
 class App extends React.Component {

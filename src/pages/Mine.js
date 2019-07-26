@@ -1,4 +1,5 @@
 import React from 'react';
+import Tags from '../components/Tags';
 
 export default class Mine extends React.Component {
   render() {
@@ -10,7 +11,7 @@ export default class Mine extends React.Component {
           </div>
           <div className="ml-4">
             <h3>Qreate</h3>
-            <p>Rails / Heroku / Amazon S3</p>
+            <Tags skills={["Rails", "Heroku", "Amazon S3"]}/>
             <p>リポジトリ非公開</p>
             <p>
               音楽やデザインなどの創作ノウハウをQiitaのように共有するサービスです。
@@ -26,7 +27,7 @@ export default class Mine extends React.Component {
           </div>
           <div className="ml-4">
             <h3>さがん歴史地図</h3>
-            <p>Rails / Heroku</p>
+            <Tags skills={["Rails", "Heroku"]}/>
             <p><a href='https://github.com/paroleise/saga_history' target="_blank">GitHub</a></p>
             <p>
               バンドメンバーであるmochiの卒業制作アプリ
@@ -48,7 +49,7 @@ export default class Mine extends React.Component {
           </div>
           <div className="ml-4">
             <h3>パチンコ機種カタログwiki(製作中)</h3>
-            <p>Rails / Heroku</p>
+            <Tags skills={["Rails", "Heroku"]}/>
             <p><a href='https://github.com/paroleise/wiki' target="_blank">GitHub</a></p>
             <p>
               名古屋のパチンコ会社に務める友人と企画しているWebサイト(wiki)です。
@@ -65,7 +66,7 @@ export default class Mine extends React.Component {
           </div>
           <div className="ml-4">
             <h3>Biske! / Novelty</h3>
-            <p>Rails / ConoHa VPS / ConoHa ObjectStrage / Stripe / ThinReports</p>
+            <Tags skills={["Rails", "ConoHa VPS", "ConoHa ObjectStrage", "Stripe", "ThinReports"]} />
             <p><a href='https://github.com/shimahi/novelty' target="_blank">GitHub</a></p>
             <p>
               レーザー加工機による木製ノベルティのオーダーメイドサービス「Biske!」の入稿システム・受注管理システムです。
