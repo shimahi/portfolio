@@ -1,0 +1,8 @@
+{
+  "qreate": {
+    "title": "Qreate",
+    "image": "https://placehold.jp/150x150.png",
+    "skills": ["Rails", "Heroku", "Amazon S3"],
+    "content": "音楽やデザインなどの創作ノウハウをQiitaのように共有するサービスです。所謂「Railsのチュートリアル」でやるようなCRUDの基本を押さえつつWysiwygエディタでのフォームや、twitterログインといった機能を追加しています。現在およそ2000人の登録ユーザーがいます。"
+  }
+}
