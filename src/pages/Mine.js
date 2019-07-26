@@ -1,6 +1,6 @@
 import React from 'react';
-import Skill from '../components/Skill';
-import '../data/skills.json'
+import Product from '../components/Product';
+import '../data/products.json'
 
 export default class Mine extends React.Component {
   constructor(props) {
@@ -68,10 +68,10 @@ export default class Mine extends React.Component {
   render() {
     return (
       <div className="container">
-        <Skill {...this.state.qreate} />
-        <Skill {...this.state.saga} />
-        <Skill {...this.state.pachiwiki} />
-        <Skill {...this.state.biske} />
+        <Product {...this.state.qreate} />
+        <Product {...this.state.saga} />
+        <Product {...this.state.pachiwiki} />
+        <Product {...this.state.biske} />
       </div>
     );
   }

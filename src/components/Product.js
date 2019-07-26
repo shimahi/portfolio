@@ -20,7 +20,7 @@ function Git(props) {
   )
 }
 
-export default class Skill extends React.Component {
+export default class Product extends React.Component {
   render () {
     return(
       <div className="container">
