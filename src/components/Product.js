@@ -5,7 +5,7 @@ function Tags(props) {
     <ul>
       {/*TODO:key設置でエラー回避*/
         props.skills.map((skill) =>
-          <li>{skill}</li>
+          <li key={skill + props.keyParent}>{skill}</li>
         )
       }
     </ul>
@@ -30,7 +30,7 @@ export default class Product extends React.Component {
           </div>
           <div className="ml-4">
             <h3>{this.props.title}</h3>
-            <Tags skills={this.props.skills} />
+            <Tags skills={this.props.skills} keyParent={this.props.title} />
             <Git git={this.props.git}/>
             <p>
               {this.props.content}
