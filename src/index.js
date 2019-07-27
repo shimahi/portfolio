@@ -10,7 +10,7 @@ import * as serviceWorker from './serviceWorker';
 class App extends React.Component {
   render() {
     return(
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <React.Fragment>
           <Header />
           <Main />
