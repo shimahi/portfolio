@@ -1,40 +1,43 @@
 import React from 'react';
 
-function Tags(props) {
-  return(
-    <ul>
-      {/*TODO:key設置でエラー回避*/
-        props.skills.map((skill) =>
-          <li key={skill + props.keyParent}>{skill}</li>
-        )
-      }
-    </ul>
-  );
+const Title = (props) => <h3>{props.title}</h3>
+
+const Image = (props) => (
+  <div>
+    <img src={props.image} alt={props.title}/>
+  </div>
+)
+
+const Tags = (props) => {
+  const skillList = props.skills.map((skill) =>
+    <li key={skill + props.keyParent}>{skill}</li>
+  )
+  return <ul>{skillList}</ul>
 }
 
-function Git(props) {
-  return (
-    <p>
-      {props.git.includes("private") ? "リポジトリ非公開" : (<a href={props.git} target="_blank" rel="noreferrer noopener">GitHub</a>)}
-    </p>
-  )
-}
+const Git = (props) => (
+  props.git.includes("private") ? <p>リポジトリ非公開</p> : <p><a href={props.git} target="_blank" rel="noreferrer noopener">GitHub</a></p>
+)
+
+const Content = (props) => (
+  <p>
+    {props.content.map(content =>
+      <span>{content}<br /></span>
+    )}
+  </p>
+)
 
 export default class Product extends React.Component {
   render () {
     return(
       <div className="container">
         <div className="mt-4 p-4 border d-flex">
-          <div>
-            <img src={this.props.image} alt={this.props.title}/>
-          </div>
+          <Image image={this.props.image} title={this.props.title} />
           <div className="ml-4">
-            <h3>{this.props.title}</h3>
+            <Title title={this.props.title} />
             <Tags skills={this.props.skills} keyParent={this.props.title} />
             <Git git={this.props.git}/>
-            <p>
-              {this.props.content}
-            </p>
+            <Content content={this.props.content} />
           </div>
         </div>
       </div>

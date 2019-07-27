@@ -35,19 +35,20 @@ export default class Me extends React.Component {
               <br/>
               webpack / parcel / gulp / sass
               <br/>
+              wordpress / jekyll.rb / Gatsuby
+              <br/>
               現職でもサイト請負制作を任されることもあり、静的サイトのコーディングは一通りできます。
               <br/>
               JSはjQueryばかりでしたが、フロントエンド技術の向上のためES6、React、およびビルドツールを集中的に勉強しています。
-              (このサイトはReactで作っています)
             </p>
             <p>
               サーバーサイド
               <br/>
               Ruby / PHP
               <br/>
-              RailsでのWebアプリ開発が業務歴一番長くて得意です。
+              Ruby on RailsでのWebアプリ開発が業務歴一番長くて得意です。
               <br/>
-              PHPは主要フレームワークの開発経験はありませんが、前職でWordpress・EC-CUBEのMAMP環境触ってました。
+              PHPは主要フレームワークの開発経験はありませんが、前職でWordpress・EC-CUBEのMAMP環境を触ってました。
               <br/>
             </p>
             <p>
