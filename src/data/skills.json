@@ -1,0 +1,26 @@
+{
+  "frontend": {
+    "title": "フロントエンド",
+    "tags": ["HTML5", "CSS3", "JavaScript(ES6)", "React", "Webpack", "parcel", "gulp", "sass"] ,
+    "content": [
+      "現職でもサイト請負制作を任されることもあり、静的サイトのコーディングは一通りできます。",
+      "JSはjQueryばかりでしたが、フロントエンド技術の向上のためES6、React、およびビルドツールを集中的に勉強しています。"
+    ]
+  },
+  "serverside": {
+    "title": "サーバーサイド",
+    "tags": ["Ruby", "PHP", "Ruby on Rails", "Jekyll.rb", "Wordpress"],
+    "content": [
+      "Ruby on RailsでのWebアプリ開発が業務歴一番長くて得意です。",
+      "PHPは主要フレームワークの開発経験はありませんが、前職でWordpress・EC-CUBEのMAMP環境を触ってました。"
+    ]
+  },
+  "infrastructure": {
+    "title": "インフラ",
+    "tags": ["Amazon EC2", "ConoHaVPS", "Heroku", "Github Pages", "Nginx", "LAMP"],
+    "content": [
+      "業務システムではLinuxサーバー + Capistranoでのデプロイというパターンを扱っています。",
+      "その他、外部ストレージやメールサーバーといったサービスの導入経験があります。"
+    ]
+  }
+}
