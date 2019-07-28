@@ -30,7 +30,7 @@ const Content = (props) => (
 export default class Product extends React.Component {
   render () {
     return(
-      <div className="container">
+      <div>
         <div className="mt-4 p-4 border d-flex">
           <Image image={this.props.image} title={this.props.title} />
           <div className="ml-4">

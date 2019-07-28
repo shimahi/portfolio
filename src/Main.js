@@ -8,13 +8,11 @@ import Us from './pages/Us';
 export default class Main extends React.Component {
   render() {
     return(
-      <div>
-        <Switch>
-          <Route exact path="/portfolio" component={Me} />
-          <Route path="/portfolio/mine" component={Mine} />
-          <Route path="/portfolio/us" component={Us} />
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/portfolio" component={Me} />
+        <Route path="/portfolio/mine" component={Mine} />
+        <Route path="/portfolio/us" component={Us} />
+      </Switch>
     )
   };
 }

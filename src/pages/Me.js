@@ -7,6 +7,9 @@ export default class Me extends React.Component {
     const data = require('../data/skills.json');
     return (
       <div className="container">
+
+        <div className="head">Me</div>
+
         <div className="mt-4 p-4 border d-flex">
           <div>
             <img src='https://placehold.jp/150x150.png' alt='' />
