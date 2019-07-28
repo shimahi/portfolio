@@ -7,6 +7,7 @@ export default class Mine extends React.Component {
     const data = require('../data/products.json');
     return (
       <div className="container">
+        <div className="head">Mine</div>
         <Product {...data.qreate} />
         <Product {...data.saga} />
         <Product {...data.pachiwiki} />

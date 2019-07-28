@@ -137,6 +137,9 @@ pre {
 
 a {
   background-color: transparent;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 /**

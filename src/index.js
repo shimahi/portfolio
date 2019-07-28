@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import './scss/style.scss';
 import { BrowserRouter as BrowserRouter, Link, Route, Switch } from "react-router-dom";
-import Header from './Header';
+import Menu from './Menu';
 import Main from './Main'
 import * as serviceWorker from './serviceWorker';
 
@@ -12,8 +12,12 @@ class App extends React.Component {
     return(
       <BrowserRouter>
         <React.Fragment>
-          <Header />
+          <Menu />
           <Main />
+          <div className="outline">
+            <div></div>
+            <div></div>
+          </div>
         </React.Fragment>
       </BrowserRouter>
     );
