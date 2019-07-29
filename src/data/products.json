@@ -1,7 +1,7 @@
 {
   "qreate": {
     "title": "Qreate",
-    "image": "https://placehold.jp/150x150.png",
+    "image": "../image/cap_qreate.png",
     "skills": ["Rails", "Heroku", "Amazon S3"],
     "git": "private",
     "content": [

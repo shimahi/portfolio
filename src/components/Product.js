@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Title = (props) => <h3>{props.title}</h3>
+const Title = (props) => <h3 className="product__title">{props.title}</h3>
 
 const Image = (props) => (
-  <div>
+  <div className="product__image">
     <img src={props.image} alt={props.title}/>
   </div>
 )
@@ -12,15 +12,18 @@ const Tags = (props) => {
   const skillList = props.skills.map((skill) =>
     <li key={skill + props.keyParent}>{skill}</li>
   )
-  return <ul>{skillList}</ul>
+  return <ul className="product__skills">{skillList}</ul>
 }
 
 const Git = (props) => (
-  props.git.includes("private") ? <p>リポジトリ非公開</p> : <p><a href={props.git} target="_blank" rel="noreferrer noopener">GitHub</a></p>
+  <div className="product__git">
+    {props.git.includes("private") ? "リポジトリ非公開" : <p><a href={props.git} target="_blank" rel="noreferrer noopener">GitHub</a></p>}
+  </div>
+
 )
 
 const Content = (props) => (
-  <p>
+  <p className="product__content">
     {props.content.map(content =>
       <span>{content}<br /></span>
     )}
