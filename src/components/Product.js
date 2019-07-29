@@ -16,7 +16,7 @@ function Property(props) {
   }
   const Git = (props) => (
     <div className="product__assets-property__git">
-      {props.git.includes("private") ? "リポジトリ非公開" : <p><a href={props.git} target="_blank" rel="noreferrer noopener">GitHub↗︎</a></p>}
+      {props.git.includes("private") ? "リポジトリ非公開" : <a href={props.git} target="_blank" rel="noreferrer noopener">GitHub↗︎</a>}
     </div>
   )
   return (

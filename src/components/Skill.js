@@ -1,15 +1,16 @@
 import React from 'react';
 
 const SkillTags = (props) => (
-  <div>
-    {props.tags.join(' / ')}
-  </div>
+  <ul className="skill-tag">
+      {props.tags.map((skill) =>
+        <li key={skill}>{skill}</li>)}
+  </ul>
 )
 
 const Content = (props) => (
   <p>
     {props.content.map(content =>
-      <span>{content}<br /></span>
+      <>{content}<br /></>
     )}
   </p>
 )
@@ -17,7 +18,7 @@ const Content = (props) => (
 export default class Skill extends React.Component {
   render () {
     return(
-      <div>
+      <div className="skill">
         <h4>{this.props.title}</h4>
         <SkillTags tags={this.props.tags} />
         <Content content={this.props.content} />
