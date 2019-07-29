@@ -61,7 +61,7 @@
     "subtitle": "しまひのポートフォリオサイト",
     "image": "cap_qreate.png",
     "url": "https://www.qreators.net",
-    "skills": ["Javascript", "React","webpack", "node.js", "github-pages"],
+    "skills": ["Javascript", "React", "webpack", "node.js", "github-pages"],
     "git": "https://github.com/shimahi/portfolio",
     "content": [
       "このサイトです。僕のやったこと・できることをまとめています。",
