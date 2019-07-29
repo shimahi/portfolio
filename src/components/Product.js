@@ -30,7 +30,7 @@ function Property(props) {
 const Title = (props) => (
   <div className="product__assets-title">
     <h3 className="product__assets-title__title">{props.title}</h3>
-    <p className="product__assets-title__subtitle">クリエイターの知識共有サイト</p>
+    <p className="product__assets-title__subtitle">{props.subtitle}</p>
   </div>
 )
 
@@ -48,7 +48,7 @@ export default class Product extends React.Component {
       <div className="product">
         <Image image={this.props.image} title={this.props.title} url={this.props.url}/>
         <div className="product__assets">
-          <Title title={this.props.title} />
+          <Title title={this.props.title} subtitle={this.props.subtitle} />
           <Property
             skills={this.props.skills} keyParent={this.props.title} git={this.props.git}
           />

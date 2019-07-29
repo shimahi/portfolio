@@ -14,9 +14,9 @@
   },
   "saga": {
     "title": "さがん歴史地図",
-    "subtitle": "クリエイターの知識共有サイト",
-    "image": "cap_qreate.png",
-    "url": "https://www.qreators.net",
+    "subtitle": "古今東西の佐賀を知る、歴史できごとマップ",
+    "image": "cap_saga.png",
+    "url": "http://sagahistory.herokuapp.com/",
     "skills": ["Rails", "Heroku"],
     "git": "https://github.com/paroleise/saga_history",
     "content": [
@@ -30,9 +30,9 @@
   },
   "pachiwiki": {
     "title": "パチンコ機種カタログwiki(製作中)",
-    "subtitle": "クリエイターの知識共有サイト",
-    "image": "cap_qreate.png",
-    "url": "https://www.qreators.net",
+    "subtitle": "遊技機版ゲームカタログ",
+    "image": "cap_pachi.png",
+    "url": "https://pachimatome.herokuapp.com/",
     "skills": ["Rails", "Heroku"],
     "git": "https://github.com/paroleise/wiki",
     "content": [
@@ -42,9 +42,9 @@
     ]
   },
   "biske": {
-    "title": "Biske! / Novelty",
-    "subtitle": "クリエイターの知識共有サイト",
-    "image": "cap_qreate.png",
+    "title": "Biske!",
+    "subtitle": "印刷データの入稿・受注管理システム",
+    "image": "cap_biske.png",
     "url": "https://www.qreators.net",
     "skills": ["Rails", "ConoHa VPS", "ConoHa ObjectStrage", "Stripe", "ThinReports"],
     "git": "https://github.com/shimahi/novelty",
@@ -58,7 +58,7 @@
   },
   "portfolio": {
     "title": "Who is shimahi?",
-    "subtitle": "クリエイターの知識共有サイト",
+    "subtitle": "しまひのポートフォリオサイト",
     "image": "cap_qreate.png",
     "url": "https://www.qreators.net",
     "skills": ["Javascript", "webpack", "node.js", "github-pages"],
