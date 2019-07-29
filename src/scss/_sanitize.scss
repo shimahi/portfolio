@@ -1,3 +1,4 @@
+/* autoprefixer grid: autoplace */
 /* Document
  * ========================================================================== */
 
@@ -90,6 +91,9 @@ ul ul {
   margin: 0;
 }
 
+ul {
+  padding-inline-start: 0;
+}
 /**
  * 1. Add the correct sizing in Firefox.
  * 2. Show the overflow in Edge 18- and IE.
@@ -568,6 +572,13 @@ textarea,
   position: absolute;
 }
 
+
+a {
+  transition: .3s;
+  &:hover {
+    transition: .3s;
+  }
+}
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
 body {

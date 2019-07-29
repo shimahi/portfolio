@@ -1,7 +1,9 @@
 {
   "qreate": {
     "title": "Qreate",
+    "subtitle": "クリエイターの知識共有サイト",
     "image": "cap_qreate.png",
+    "url": "https://www.qreators.net",
     "skills": ["Rails", "Heroku", "Amazon S3"],
     "git": "private",
     "content": [
@@ -12,7 +14,9 @@
   },
   "saga": {
     "title": "さがん歴史地図",
-    "image": "https://placehold.jp/150x150.png",
+    "subtitle": "クリエイターの知識共有サイト",
+    "image": "cap_qreate.png",
+    "url": "https://www.qreators.net",
     "skills": ["Rails", "Heroku"],
     "git": "https://github.com/paroleise/saga_history",
     "content": [
@@ -26,7 +30,9 @@
   },
   "pachiwiki": {
     "title": "パチンコ機種カタログwiki(製作中)",
-    "image": "https://placehold.jp/150x150.png",
+    "subtitle": "クリエイターの知識共有サイト",
+    "image": "cap_qreate.png",
+    "url": "https://www.qreators.net",
     "skills": ["Rails", "Heroku"],
     "git": "https://github.com/paroleise/wiki",
     "content": [
@@ -37,7 +43,9 @@
   },
   "biske": {
     "title": "Biske! / Novelty",
-    "image": "https://placehold.jp/150x150.png",
+    "subtitle": "クリエイターの知識共有サイト",
+    "image": "cap_qreate.png",
+    "url": "https://www.qreators.net",
     "skills": ["Rails", "ConoHa VPS", "ConoHa ObjectStrage", "Stripe", "ThinReports"],
     "git": "https://github.com/shimahi/novelty",
     "content": [
@@ -50,7 +58,9 @@
   },
   "portfolio": {
     "title": "Who is shimahi?",
-    "image": "https://placehold.jp/150x150.png",
+    "subtitle": "クリエイターの知識共有サイト",
+    "image": "cap_qreate.png",
+    "url": "https://www.qreators.net",
     "skills": ["Javascript", "webpack", "node.js", "github-pages"],
     "git": "https://github.com/shimahi/portfolio",
     "content": [
