@@ -4,7 +4,7 @@ const Title = (props) => <h3 className="product__title">{props.title}</h3>
 
 const Image = (props) => (
   <div className="product__image">
-    <img src={process.env.PUBLIC_URL + '../image/'+props.image} alt={props.title}/>
+    <img src={process.env.REACT_APP_IMAGE_PATH + 'image/'+ props.image} alt={props.title}/>
   </div>
 )
 
@@ -32,6 +32,7 @@ const Content = (props) => (
 
 export default class Product extends React.Component {
   render () {
+    console.log(process.env.REACT_APP_IMAGE_PATH)
     return(
       <div>
         <div className="mt-4 p-4 border d-flex">
