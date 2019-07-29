@@ -4,7 +4,7 @@ const Title = (props) => <h3 className="product__title">{props.title}</h3>
 
 const Image = (props) => (
   <div className="product__image">
-    <img src={props.image} alt={props.title}/>
+    <img src={process.env.PUBLIC_URL + '../image/'+props.image} alt={props.title}/>
   </div>
 )
 
