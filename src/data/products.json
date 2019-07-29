@@ -38,7 +38,7 @@
     "content": [
       "名古屋のパチンコ会社に務める友人と企画しているWebサイト(wiki)です。",
       "「ゲームカタログwiki」のパチンコ版というコンセプトで、パチンコの機種についてまとめ・レビューが見れるサイトを目指しています。",
-      "記事の編集履歴を取得して差分表示したり、Markdown記法とWysiwygを選択できるエディタの導入を予定しています。"
+      "記事の編集履歴を取得して差分表示したり、Wysiwygエディタで記事を編集できる機能などを実装しています。"
     ]
   },
   "biske": {
@@ -61,7 +61,7 @@
     "subtitle": "しまひのポートフォリオサイト",
     "image": "cap_qreate.png",
     "url": "https://www.qreators.net",
-    "skills": ["Javascript", "webpack", "node.js", "github-pages"],
+    "skills": ["Javascript", "React","webpack", "node.js", "github-pages"],
     "git": "https://github.com/shimahi/portfolio",
     "content": [
       "このサイトです。僕のやったこと・できることをまとめています。",
