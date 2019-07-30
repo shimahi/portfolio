@@ -1,13 +1,7 @@
 import React from 'react';
 import Skill from '../components/Skill';
 import '../data/skills.json'
-
-
-const Portrait = () => (
-  <div className="portrait me-item">
-    <img src={process.env.REACT_APP_IMAGE_PATH + 'image/ore.jpg'} />
-  </div>
-)
+import ore from '../image/ore.jpg';
 
 const Headline = (props) => (
   <div className="headline">
@@ -25,7 +19,9 @@ export default class Me extends React.Component {
         <div className="head">Me</div>
 
 
-        <Portrait />
+        <div className="portrait me-item">
+          <img src={ore} alt="俺" />
+        </div>
 
         <div className="profile me-item">
           <Headline title="HIKARU MAESHIMA" subtitle="前島 光 / しまひ" />
