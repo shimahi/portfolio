@@ -1,26 +1,26 @@
 {
   "frontend": {
     "title": "フロントエンド",
-    "title-en": "Frontend",
+    "title_en": "Frontend",
     "tags": ["HTML5", "CSS3", "JavaScript(ES6)", "React", "jQuery", "Webpack", "parcel", "gulp", "sass"] ,
     "content": [
       "現職でもサイト請負制作を任されることもあり、静的サイトのコーディングは一通りできます。",
-      "現在はフロントエンド技術への関心が高く、ES6、React、およびビルドツールを集中的に勉強しています。",
+      "現在はフロントエンド技術への関心が高く、ES6、React、およびビルドツールを積極的に勉強しています。",
       "このサイトはReactで作りました。"
     ]
   },
   "serverside": {
     "title": "サーバーサイド",
-    "title-en": "Serverside",
+    "title_en": "Serverside",
     "tags": ["Ruby", "PHP", "Ruby on Rails", "Jekyll", "Wordpress", "PostgreSQL", "MySQL"],
     "content": [
       "Ruby on RailsでのWebアプリ開発が業務歴一番長くて得意です。",
-      "PHPは主要フレームワークの開発経験はありませんが、前職でWordpress・EC-CUBEのMAMP環境を触ってました。"
+      "PHPは主要フレームワークの開発経験はありませんが、前職でWordpress・EC-CUBEのMAMP環境を触っていました。"
     ]
   },
   "infrastructure": {
     "title": "インフラ",
-    "title-en": "Infrastructure",
+    "title_en": "Infrastructure",
     "tags": ["Amazon EC2", "ConoHaVPS", "Heroku", "Github Pages", "Nginx", "LAMP"],
     "content": [
       "AWS / VPSでのLinuxサーバー構築経験があります。(デプロイツールはCapistranoやShellなど)",
@@ -29,11 +29,11 @@
   },
   "design": {
     "title": "デザイン",
-    "title-en": "Design",
+    "title_en": "Design",
     "tags": ["Illustrator", "Photoshop"],
     "content": [
-      "Illustrator・Photoshopを使った、簡単な作図・写真加工等を行うことができます。",
-      "現職で運営しているWebサービスのデザインを一からした経験もあります。"
+      "Illustrator・Photoshopを使った簡単な作図・写真加工等を行うことができます。",
+      "現職で運営しているWebアプリのデザインを一から担当した経験もあります。"
     ]
   }
 }
