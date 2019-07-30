@@ -29,8 +29,8 @@
     ]
   },
   "pachiwiki": {
-    "title": "パチンコ機種カタログwiki(製作中)",
-    "subtitle": "遊技機版ゲームカタログ",
+    "title": "パチンコ機種カタログwiki",
+    "subtitle": "遊技機版ゲームカタログ(製作中)",
     "image": "cap_pachi.png",
     "url": "https://pachimatome.herokuapp.com/",
     "skills": ["Rails", "Heroku"],
@@ -46,7 +46,7 @@
     "subtitle": "印刷データの入稿・受注管理システム",
     "image": "cap_biske.png",
     "url": "https://www.qreators.net",
-    "skills": ["Rails", "ConoHa VPS", "ConoHa ObjectStrage", "Stripe", "ThinReports"],
+    "skills": ["Rails", "Capistrano", "Stripe", "ConoHa VPS", "ThinReports"],
     "git": "https://github.com/shimahi/novelty",
     "content": [
       "レーザー加工機による木製ノベルティのオーダーメイドサービス「Biske!」の入稿システム・受注管理システムです。",
@@ -64,7 +64,7 @@
     "skills": ["Javascript", "React", "webpack", "node.js", "github-pages"],
     "git": "https://github.com/shimahi/portfolio",
     "content": [
-      "このサイトです。僕のやったこと・できることをまとめています。",
+      "このサイトです。僕のスキルと成果物をまとめています。",
       "共通項目をReactでコンポーネント化し、データ部分はコーディングから分離し、JSONを読み込ませてレンダリングを行なっています。",
       "デプロイにはgithub-pagesを使用しています。"
     ]
