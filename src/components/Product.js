@@ -26,11 +26,18 @@ function Property(props) {
   )
 }
 
+const Link = (props) =>{
+  if (props.title == "Biske!") {
+    return <a href="https://youtu.be/EypOwCu7e6o" className="product__assets-title__url" target="_blank">デモ動画を見る</a>
+  }
+  return <a href={props.url} className="product__assets-title__url" target="_blank">{props.url}</a>
+}
+
 const Title = (props) => (
   <div className="product__assets-title">
     <h3 className="product__assets-title__title">{props.title}</h3>
     <p className="product__assets-title__subtitle">{props.subtitle}</p>
-    <a href={props.url} className="product__assets-title__url">{props.url}</a>
+    <Link title={props.title} url={props.url} />
   </div>
 )
 
