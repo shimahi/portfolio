@@ -32,6 +32,7 @@ Me
   }
   .profile-content {
     padding: 0 40px;
+    line-height: 1.8rem;
     @media(max-width: 1200px) {
       padding: 0 20px;
     }
@@ -94,7 +95,7 @@ Me
     }
   }
   &__content {
-    line-height: 1.8rem;
+    line-height: 2rem;
     ul {
       margin: 20px 10px 18px 40px;
     }

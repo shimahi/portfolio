@@ -1,0 +1,27 @@
+/* = = = = = = = = = = = = = = = = = = = = = = = = = =
+Us
+= = = = = = = = = = = = = = = = = = = = = = = = = = */
+.background-contaniner {
+  max-width: 100%;
+  position: relative;
+  .us-background {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+  }
+  .us-logo {
+    position: absolute;
+    width: 30%;
+    max-width: 200px;
+    top: 30%;
+    transition: .3s;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100;
+  }
+  @include mq-xs {
+    margin-top: 30px;
+    padding: 5px;
+  }
+}
