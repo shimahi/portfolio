@@ -20,7 +20,6 @@ function Content(props) {
       </>
     );
   }
-  console.log(props.titleEn)
   return(
     <p className="skill__content">
       {props.content.map(content =>

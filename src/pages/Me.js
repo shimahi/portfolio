@@ -20,7 +20,7 @@ export default class Me extends React.Component {
 
 
         <div className="portrait me-item">
-          <img src='https://placehold.jp/200x200.png' alt='' />
+          <img src={process.env.REACT_APP_IMAGE_PATH + 'image/ore.jpg'} alt="俺" />
         </div>
 
         <div className="profile me-item">
@@ -49,7 +49,7 @@ export default class Me extends React.Component {
             <div className="skill">
               <h4 className="skill__title"><span className="skill__title-decoration">█</span>現在の興味・学習方向</h4>
               <div className="skill__content">
-                <p >
+                <p>
                   JavaScriptを中心としたフロントエンド技術全般に興味があり、特にReactが好きでスキル向上のため勉強を続けています。
                   <br/>
                   既存の静的サイトのAMP化や、CMSサイトをハイパフォーマンスにするためのHeadless CMS
