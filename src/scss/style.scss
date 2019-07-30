@@ -66,6 +66,7 @@ nav
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: $en;
   @media(max-width: 768px) {
     width: 160px;
   }
