@@ -14,7 +14,7 @@ function Content(props) {
     vaunt = (
       <>
         Qreate(自分のサイト)でAdobeツールの使い方を書いたりすることも。
-        <a href='https://www.qreators.net/design/71' target='_blank'>
+        <a href='https://www.qreators.net/design/71' target='_blank' rel="noopener noreferrer">
           → 例
         </a>
       </>
