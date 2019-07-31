@@ -42,7 +42,7 @@ Us
   padding: 0 40px;
   @include mq-xs {
     margin-bottom: 30px;
-    padding: 0;
+    padding: 0 0 0 14px;
   }
   &__image {
     max-width: 100px;
@@ -52,15 +52,12 @@ Us
     }
     @include mq-xs {
       max-width: 55px;
-      margin-right: 15px;
+      margin-right: 10px;
     }
   }
   &__assets {
     &-name {
       font-size: 1.1rem;
-      @include mq-xs {
-        font-size: 1rem;
-      }
       @media(max-width: 415px) {
         font-size: .9rem;
         margin-bottom: 4px;
@@ -69,11 +66,28 @@ Us
     }
     &-post {
       font-size: .9rem;
-      @include mq-xs {
+      @media(max-width: 415px) {
         font-size: .8rem;
       }
-      @media(max-width: 415px) {
-        font-size: .7rem;
+    }
+  }
+}
+
+.overview {
+  padding: 0 40px;
+  @include mq-xs {
+    margin-bottom: 30px;
+    padding: 0 0 0 14px;
+  }
+  .overview__links {
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 50px auto;
+    a {
+      color: darken($blue, 10%);
+      &:hover {
+        color: $blue;
       }
     }
   }
