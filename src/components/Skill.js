@@ -13,7 +13,7 @@ function Content(props) {
   if (props.titleEn === "Design") {
     vaunt = (
       <>
-        Qreate(自分のサイト)でAdobeツールの使い方を書いたりすることもあります。
+        Qreate(自分のサイト)でAdobeツールの使い方を書いたりすることも。
         <a href='https://www.qreators.net/design/71' target='_blank'>
           → 例
         </a>

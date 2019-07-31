@@ -101,7 +101,7 @@ nav
       color: $blue;
       transition: .3s;
     }
-    @include mq-xs {
+    @media(min-width: 576px) {
       &:hover {
         box-shadow: 1px 2px 6px rgba(0,0,0,0.4);
         color: darken($blue, 15%);
