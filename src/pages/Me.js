@@ -16,7 +16,11 @@ export default class Me extends React.Component {
     return (
       <div className="container">
 
-        <div className="head">Me</div>
+        <div className="head">
+          <div className="head__item">
+            <img src='https://placehold.jp/300x100.png' alt=''/>
+          </div>
+        </div>
         <div className="portrait me-item">
           <img src={ore} alt="俺" />
         </div>
