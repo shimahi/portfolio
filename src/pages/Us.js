@@ -20,7 +20,7 @@ export default class Us extends React.Component {
   componentDidMount() {
     this.timerID = setInterval(
       () => this.changeBackgroundImage(),
-      6000
+      8000
     );
   }
 
