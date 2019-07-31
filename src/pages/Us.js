@@ -1,20 +1,26 @@
 import React from 'react';
-import blue from '../image/bl.jpg';
-import orange from '../image/or.jpg';
+import bg_1 from '../image/us_background_1.jpg';
+import bg_2 from '../image/us_background_2.jpg';
+import bg_3 from '../image/us_background_3.jpg';
+import bg_4 from '../image/us_background_4.jpg';
+import bg_5 from '../image/us_background_5.jpg';
+import bg_6 from '../image/us_background_6.jpg';
 import logo from '../image/paroleise_logo.svg';
+
+const bgArray = [bg_1, bg_2, bg_3, bg_4, bg_5, bg_6];
 
 export default class Us extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      image: orange
+      image: bgArray[0]
     }
   }
 
   componentDidMount() {
     this.timerID = setInterval(
       () => this.changeBackgroundImage(),
-      7000
+      6000
     );
   }
 
@@ -23,8 +29,13 @@ export default class Us extends React.Component {
   }
 
   changeBackgroundImage() {
+    let countImage = bgArray.indexOf(this.state.image);
+    console.log(countImage);
+    if (countImage === 5) {
+      countImage = -1
+    }
     this.setState({
-      image: this.state.image == orange ? blue : orange
+      image: bgArray[countImage + 1]
     })
   }
 
