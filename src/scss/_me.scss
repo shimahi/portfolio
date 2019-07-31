@@ -33,10 +33,10 @@ Me
   .profile-content {
     padding: 0 40px;
     line-height: 1.8rem;
-    @media(max-width: 1200px) {
+    @include mq-lg {
       padding: 0 20px;
     }
-    @media(max-width: 768px) {
+    @include mq-sm {
       padding: 0 10px;
     }
   }
@@ -58,9 +58,8 @@ Me
     z-index: 1;
     background-color: $blue;
   }
-  @media(max-width: 576px) {
+  @include mq-xs {
     width: 100%;
-    //border: solid 3px gray;
   }
 }
 
