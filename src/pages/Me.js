@@ -24,11 +24,11 @@ export default class Me extends React.Component {
           <Headline title="HIKARU MAESHIMA" subtitle="前島 光 / しまひ" />
           <div className="profile-content">
             <p>
-              Web開発に興味を持ち22歳からプログラミングの勉強を始める。
+              Web開発に興味を持ち22歳からプログラミングを始める。
               <br/>
-              ノベルティ制作会社、デザイン事務所(アルバイト)を経て、現在はWeb開発会社でエンジニアとして勤務
+              ノベルティ制作会社、デザイン事務所を経て、現在はWeb開発会社でエンジニアとして勤務
               <br/>
-              1994年12月16日生 九州大学音響設計学科卒業 AB型
+              1994年12月16日生 東京都八王子市出身 九州大学音響設計学科卒業 AB型
               <br/>
               ギターで曲を作って同人イベントに出展するのが趣味
               <br/>
