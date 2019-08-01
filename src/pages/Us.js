@@ -11,6 +11,20 @@ import mochi from '../image/mochi.jpg';
 
 const bgArray = [bg_1, bg_2, bg_3, bg_4, bg_5, bg_6];
 
+const photoArray = [
+  'https://placehold.jp/400x400.png',
+  'https://placehold.jp/400x400.png',
+  'https://placehold.jp/400x400.png',
+  'https://placehold.jp/400x400.png',
+  'https://placehold.jp/400x400.png',
+  'https://placehold.jp/400x400.png',
+  'https://placehold.jp/400x400.png',
+  'https://placehold.jp/400x400.png',
+  'https://placehold.jp/400x400.png',
+  'https://placehold.jp/400x400.png',
+  'https://placehold.jp/400x400.png',
+  'https://placehold.jp/400x400.png'
+]
 
 const Headline = (props) => (
   <div className="headline">
@@ -37,6 +51,17 @@ const Member = (props) => (
     </div>
   </div>
 )
+
+
+function Photos() {
+  const list = [];
+  for(const item in photoArray) {
+    list.push(<li key={item}><img src={photoArray[item]} /></li>)
+  }
+  return (
+    <ul className="photos__list">{list}</ul>
+  )
+}
 
 export default class Us extends React.Component {
   constructor(props) {
@@ -112,8 +137,7 @@ export default class Us extends React.Component {
           <div className="us-item">
             <Headline title="Garally" subtitle="写真"/>
             <div className="photos">
-
-
+              <Photos />
             </div>
           </div>
         </div>
