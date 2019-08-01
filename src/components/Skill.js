@@ -21,9 +21,9 @@ function Content(props) {
     );
   }
   return(
-    <p className="skill__content"> //key必要
-      {props.content.map(content =>
-        <>{content}<br /></>
+    <p className="skill__content">
+      {props.content.map((content, i) =>
+        <span key={i}>{content}<br /></span>
       )}
       {vaunt}
     </p>

@@ -43,8 +43,8 @@ const Title = (props) => (
 
 const Content = (props) => (
   <p className="product__content">
-    {props.content.map(content =>
-      <>{content}<br /></>
+    {props.content.map((content, i) =>
+      <span key={i}>{content}<br /></span>
     )}
   </p>
 )
