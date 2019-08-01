@@ -8,23 +8,22 @@ import bg_6 from '../image/us_background_6.jpg';
 import logo from '../image/paroleise_logo.svg';
 import shimahi from '../image/shimahi.jpg';
 import mochi from '../image/mochi.jpg';
+import gar_1 from '../image/gar_1.jpg';
+import gar_2 from '../image/gar_2.jpg';
+import gar_3 from '../image/gar_3.jpg';
+import gar_4 from '../image/gar_4.jpg';
+import gar_5 from '../image/gar_5.jpg';
+import gar_6 from '../image/gar_6.jpg';
+import gar_7 from '../image/gar_7.jpg';
+import gar_8 from '../image/gar_8.jpg';
+import gar_9 from '../image/gar_9.jpg';
+import gar_10 from '../image/gar_10.jpg';
+import gar_11 from '../image/gar_11.jpg';
+import gar_12 from '../image/gar_12.jpg';
 
 const bgArray = [bg_1, bg_2, bg_3, bg_4, bg_5, bg_6];
 
-const photoArray = [
-  'https://placehold.jp/400x400.png',
-  'https://placehold.jp/400x400.png',
-  'https://placehold.jp/400x400.png',
-  'https://placehold.jp/400x400.png',
-  'https://placehold.jp/400x400.png',
-  'https://placehold.jp/400x400.png',
-  'https://placehold.jp/400x400.png',
-  'https://placehold.jp/400x400.png',
-  'https://placehold.jp/400x400.png',
-  'https://placehold.jp/400x400.png',
-  'https://placehold.jp/400x400.png',
-  'https://placehold.jp/400x400.png'
-]
+const photoArray = [gar_1, gar_2, gar_3, gar_4, gar_5, gar_6, gar_7, gar_8, gar_9, gar_10, gar_11, gar_12]
 
 const Headline = (props) => (
   <div className="headline">
@@ -135,7 +134,7 @@ export default class Us extends React.Component {
             </div>
           </div>
           <div className="us-item">
-            <Headline title="Garally" subtitle="写真"/>
+            <Headline title="Garally" subtitle="参加イベントや作品の写真"/>
             <div className="photos">
               <Photos />
             </div>
