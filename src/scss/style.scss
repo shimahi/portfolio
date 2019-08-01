@@ -70,6 +70,9 @@ body {
   }
   &:last-child {
     top: calc(100vh - 6px);
+    @include mq-xs {
+      top: calc(100vh - 3px);
+    }
   }
 }
 
