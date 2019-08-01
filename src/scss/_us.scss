@@ -92,3 +92,15 @@ Us
     }
   }
 }
+
+.music {
+  text-align: center;
+  width: 90%;
+  margin: 30px auto 0;
+  @include mq-xs {
+    width: 100%;
+  }
+  iframe {
+    margin-bottom: 30px;
+  }
+}

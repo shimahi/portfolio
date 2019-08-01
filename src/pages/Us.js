@@ -94,14 +94,28 @@ export default class Us extends React.Component {
                 Qreate -クリエイターの知識共有サイト のように、しまひがシステム開発、mochiがデザインを担当する
                 Webサービスの企画開発も行なっており、同人の枠を超えた創作活動を続けている。
               </p>
-              <div class="overview__links">
-                <a href='https://m.soundcloud.com/paroleise' target='_blank' rel="noreferrer noopener">SoundCloud</a>
-                <a href='https://paroleise.booth.pm/' target='_blank' rel="noreferrer noopener">BOOTH</a>
-                <a href='https://github.com/paroleise' target='_blank' rel="noreferrer noopener">GitHub</a>
+              <div className="overview__links">
+                <a href='https://m.soundcloud.com/paroleise' target='_blank' rel="noreferrer noopener">SoundCloud↗︎</a>
+                <a href='https://paroleise.booth.pm/' target='_blank' rel="noreferrer noopener">BOOTH↗︎</a>
+                <a href='https://github.com/paroleise' target='_blank' rel="noreferrer noopener">GitHub↗︎</a>
               </div>
             </div>
           </div>
+          <div className="us-item">
+            <Headline title="Music" subtitle="楽曲サンプル"/>
+            <div className="music">
+              <iframe width="100%" height="120" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/611698656&color=%234c5c74&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+              <iframe width="100%" height="120" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/614439021&color=%234c5c74&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+              <iframe width="100%" height="120" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/484984596&color=%234c5c74&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+          </div>
+          <div className="us-item">
+            <Headline title="Garally" subtitle="写真"/>
+            <div className="photos">
 
+
+            </div>
+          </div>
         </div>
       </div>
 
