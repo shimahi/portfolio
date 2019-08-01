@@ -7,8 +7,13 @@ import Menu from './Menu';
 import Main from './Main'
 import ScrollToTop from './components/ScrollToTop';
 import * as serviceWorker from './serviceWorker';
+import { animateScroll as scroll } from 'react-scroll';
 
 class App extends React.Component {
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   render() {
     return(
       <BrowserRouter>
@@ -16,6 +21,7 @@ class App extends React.Component {
           <React.Fragment>
             <Menu />
             <Main />
+            <div onClick={this.scrollToTop} className="scroll-top"><span>↑</span>Page Top</div>
             <div className="outline">
               <div></div>
               <div></div>
