@@ -57,14 +57,14 @@
     ]
   },
   "portfolio": {
-    "title": "Who is shimahi?",
+    "title": "Meminus",
     "subtitle": "しまひのポートフォリオサイト",
     "image": "cap_qreate.png",
     "url": "https://www.qreators.net",
     "skills": ["Javascript", "React", "webpack", "node.js", "github-pages"],
     "git": "https://github.com/shimahi/portfolio",
     "content": [
-      "このサイトです。僕のスキルと成果物をまとめています。",
+      "このサイトです。僕のスキル(me)と成果物(mine)とサークル(us)についてまとめています。",
       "共通項目をReactでコンポーネント化し、データ部分はコーディングから分離し、JSONを読み込ませてレンダリングを行なっています。",
       "デプロイにはgithub-pagesを使用しています。"
     ]
