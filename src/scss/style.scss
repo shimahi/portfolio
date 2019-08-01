@@ -102,6 +102,7 @@ nav
     line-height: 66px;
     text-align: center;
     border-radius: 50px;
+    text-decoration: none;
     &.is-active {
       color: $blue;
     }
@@ -124,7 +125,6 @@ nav
     transform: rotate(90deg);
     user-select: none;
   }
-
   @include mq-xs {
     position: static;
     flex-direction: row;
