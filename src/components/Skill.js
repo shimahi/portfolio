@@ -21,7 +21,7 @@ function Content(props) {
     );
   }
   return(
-    <p className="skill__content">
+    <p className="skill__content"> //key必要
       {props.content.map(content =>
         <>{content}<br /></>
       )}
