@@ -119,6 +119,7 @@ Us
     li {
       display: block;
       width: 32%;
+      max-width: 400px;
       margin-top: 15px;
       &:nth-child(3n) {
         margin-left: 2%;
