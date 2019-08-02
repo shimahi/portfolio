@@ -144,7 +144,10 @@ head
   height: 100px;
   @include mq-xs {
     margin-top: 45px;
-    height: 70px
+    height: 70px;
+    @media(max-width: 395px) {
+      height: 30px;
+    }
   }
   &__item {
     position: absolute;
@@ -164,6 +167,12 @@ head
     }
     @include mq-xs {
       height: 60px;
+      top: 95px;
+      right: -22px;
+    }
+    @media(max-width: 395px) {
+      height: 45px;
+      right: -40px;
     }
   }
 }
