@@ -11,7 +11,6 @@ general
 = = = = = = = = = = = = = = = = = = = = = = = = = = */
 html {
   background-color: $blue;
-  overflow-x: hidden;
   @include mq-xs {
   font-size: 90%;
   }
@@ -19,7 +18,11 @@ html {
 body {
   background-color: $basecolor;
   color: #777;
+  max-width: 100%;
+  overflow-x: hidden;
   border: solid 6px $blue;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 #root {
