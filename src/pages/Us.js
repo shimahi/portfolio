@@ -110,13 +110,14 @@ export default class Us extends React.Component {
                 曲を作るエンジニア「しまひ」と歌を歌うデザイナー「mochi」による同人ユニット。
               </p>
               <p>
-                2016年福岡市博多区で結成
+                2016年 福岡市博多区で結成。
                 <br/>
                 しまひが作曲・録音、mochiがボーカル・デザインを行い制作したCDを同人誌即売で頒布する活動を基本とするほか、
-                mochiのタイポグラフィ(文字デザイン)をまとめた同人誌の発行、他サークルとの合同楽曲制作、音楽ライブ活動を続けている。
+                <br/>
+                他サークルとの合同楽曲制作、mochiによるタイポグラフィ(文字デザイン)同人誌の発行、音楽ライブ活動を続けている。
                 <br/>
                 Qreate -クリエイターの知識共有サイト のように、しまひがシステム開発、mochiがデザインを担当する
-                Webサービスの企画開発も行なっており、同人の枠を超えた創作活動を続けている。
+                Webサービスの企画開発など、同人の枠を超えた創作活動を続けている。
               </p>
               <div className="overview__links">
                 <a href='https://m.soundcloud.com/paroleise' target='_blank' rel="noreferrer noopener">SoundCloud↗︎</a>

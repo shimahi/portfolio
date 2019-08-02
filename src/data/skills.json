@@ -2,20 +2,22 @@
   "frontend": {
     "title": "フロントエンド",
     "title_en": "Frontend",
-    "tags": ["HTML5", "CSS3", "JavaScript(ES6)", "React", "jQuery", "Webpack", "parcel", "gulp", "sass"] ,
+    "tags": ["HTML5", "CSS3", "JavaScript", "React", "jQuery", "Webpack", "parcel", "gulp", "sass"] ,
     "content": [
-      "現職でもサイト請負制作を任されることもあり、静的サイトのコーディングは一通りできます。",
-      "現在はフロントエンド技術への関心が高く、ES6、React、およびビルドツールを積極的に勉強しています。",
+      "静的サイトのコーディングは一通り取得しており、現職でもサイト請負制作を任されることもあります。",
+      "保守性・再利用性を意識してCSSを書くのが得意です。",
+      "現在は特にJavaScriptに興味があり、ES6、React、およびビルドツールを積極的に勉強しています。",
       "このサイトはReactで作りました。"
     ]
   },
   "serverside": {
     "title": "サーバーサイド",
     "title_en": "Serverside",
-    "tags": ["Ruby", "PHP", "Ruby on Rails", "Jekyll", "Wordpress", "PostgreSQL", "MySQL"],
+    "tags": ["Ruby", "PHP", "Ruby on Rails", "Laravel", "Jekyll", "Wordpress", "PostgreSQL", "MySQL"],
     "content": [
-      "Ruby on RailsでのWebアプリ開発が業務歴一番長くて得意です。",
-      "PHPは主要フレームワークの開発経験はありませんが、前職でWordpress・EC-CUBEのMAMP環境を触っていました。"
+      "Ruby on RailsでWebアプリケーションを作ることが多く、現職で自社サービス・業務系アプリケーションの開発しています。",
+      "プライベートでもRailsを使って開発をしています。",
+      "PHPは主にMAMPを使用した開発のほか、前職ではWordpress・EC-CUBE等のCMS構築を行なってました。"
     ]
   },
   "infrastructure": {
