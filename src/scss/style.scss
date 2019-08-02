@@ -78,7 +78,7 @@ body {
     border-top: solid 7px $blue;
     top: calc(100vh - 7px);
     @include mq-xs {
-      top: calc(100vh - 3px);
+      top: calc(100vh - 7px);
     }
   }
 }
