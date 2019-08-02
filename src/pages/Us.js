@@ -20,6 +20,7 @@ import gar_9 from '../image/gar_9.jpg';
 import gar_10 from '../image/gar_10.jpg';
 import gar_11 from '../image/gar_11.jpg';
 import gar_12 from '../image/gar_12.jpg';
+import Footer from '../Footer.js';
 
 const bgArray = [bg_1, bg_2, bg_3, bg_4, bg_5, bg_6];
 
@@ -141,6 +142,7 @@ export default class Us extends React.Component {
             </div>
           </div>
         </div>
+        <div className="container"><Footer /></div>
       </div>
 
     );

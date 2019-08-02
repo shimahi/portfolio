@@ -3,6 +3,12 @@ Me
 = = = = = = = = = = = = = = = = = = = = = = = = = = */
 .me-item {
   margin-top: 45px;
+  a {
+    color: darken($blue, 10%);
+    &:hover {
+      color: $blue;
+    }
+  }
   .headline {
     @include headline;
   }
@@ -14,6 +20,9 @@ Me
     }
     @include mq-sm {
       padding: 0 10px;
+    }
+    @include mq-xs {
+      padding: 0 2px;
     }
     &__links {
       display: flex;
@@ -97,5 +106,22 @@ Me
         color: $blue;
       }
     }
+  }
+}
+
+.arrow-bottom {
+  margin-left: 40px;
+  font-weight: bold;
+  @include mq-xs {
+    margin: auto;
+    text-align: center;
+    display: block;
+  }
+}
+.contact-dm {
+  margin-left: 10px;
+  @include mq-xs {
+    margin-top: 20px;
+    text-align: center;
   }
 }
