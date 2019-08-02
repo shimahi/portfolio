@@ -30,13 +30,17 @@ export default class Me extends React.Component {
             <p>
               Web開発に興味を持ち22歳からプログラミングを始める。
               <br/>
-              ノベルティ制作会社、デザイン事務所を経て、現在はWeb開発会社でエンジニアとして勤務
+              ノベルティ制作会社、デザイン事務所を経て、現在はWeb開発会社でエンジニアとして勤務。
               <br/>
-              1994年12月16日生 東京都八王子市出身 九州大学音響設計学科卒業 AB型
+              1994年12月16日生、東京都八王子市出身、九州大学音響設計学科卒業、AB型。
               <br/>
-              ギターで曲を作って同人イベントに出展するのが趣味
+              ギターで曲を作って同人イベントに出展するのが趣味。
               <br/>
             </p>
+            <div className="profile-content__links">
+              <a href='https://github.com/shimahi' target='_blank' rel="noreferrer noopener">GitHub↗︎</a>
+              <a href='https://twitter.com/prlsmh' target='_blank' rel="noreferrer noopener">twitter↗︎</a>
+            </div>
           </div>
         </div>
 
@@ -75,6 +79,11 @@ export default class Me extends React.Component {
         </div>
         <div className="carrier me-item">
           <Headline title="CARRIER" subtitle="経歴" />
+          <div className="profile-content">
+            <p>あいうえお</p>
+            <p>↓</p>
+            <p>あいうえお</p>
+          </div>
         </div>
 
         <div className="stance me-item">
