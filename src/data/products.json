@@ -16,7 +16,7 @@
     "title": "さがん歴史地図",
     "subtitle": "古今東西の佐賀を知る、歴史できごとマップ",
     "image": "cap_saga.png",
-    "url": "http://sagahistory.herokuapp.com/",
+    "url": "http://sagahistory.herokuapp.com",
     "skills": ["Rails", "Heroku"],
     "git": "https://github.com/paroleise/saga_history",
     "content": [
@@ -32,7 +32,7 @@
     "title": "パチンコ機種カタログwiki",
     "subtitle": "遊技機版ゲームカタログ(製作中)",
     "image": "cap_pachi.png",
-    "url": "https://pachimatome.herokuapp.com/",
+    "url": "https://pachimatome.herokuapp.com",
     "skills": ["Rails", "Heroku"],
     "git": "https://github.com/paroleise/wiki",
     "content": [
@@ -45,7 +45,7 @@
     "title": "Biske!",
     "subtitle": "印刷データの入稿・受注管理システム",
     "image": "cap_biske.png",
-    "url": "https://www.qreators.net",
+    "url": "",
     "skills": ["Rails", "Capistrano", "Stripe", "ConoHa VPS", "ThinReports"],
     "git": "https://github.com/shimahi/novelty",
     "content": [
@@ -60,7 +60,7 @@
     "title": "Meminus",
     "subtitle": "しまひのポートフォリオサイト",
     "image": "cap_qreate.png",
-    "url": "https://www.qreators.net",
+    "url": "https://shimahi.github.io/portfolio",
     "skills": ["Javascript", "React", "webpack", "node.js", "github-pages"],
     "git": "https://github.com/shimahi/portfolio",
     "content": [
