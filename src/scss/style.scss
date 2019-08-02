@@ -70,18 +70,15 @@ body {
 .outline div {
   position: fixed;
   width: 100vw;
-  border-bottom: solid 6px $blue;
-  height: 6px;
   &:first-child {
+    border-bottom: solid 7px $blue;
     top: 0;
   }
   &:last-child {
-    top: calc(100vh - 6px);
+    border-top: solid 7px $blue;
+    top: calc(100vh - 7px);
     @include mq-xs {
       top: calc(100vh - 3px);
-      @media screen and (-webkit-min-device-pixel-ratio:0) {
-        top: calc(102vh);
-      }
     }
   }
 }
