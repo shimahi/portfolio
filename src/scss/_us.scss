@@ -81,6 +81,9 @@ Us
     margin-bottom: 30px;
     padding: 0 0 0 14px;
   }
+  @include mq-xxs {
+    padding: 0 0 0 3px;
+  }
   .overview__links {
     display: flex;
     justify-content: space-around;
