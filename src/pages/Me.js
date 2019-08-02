@@ -2,6 +2,8 @@ import React from 'react';
 import Skill from '../components/Skill';
 import '../data/skills.json'
 import ore from '../image/ore.jpg';
+import me from '../image/me.svg';
+
 
 const Headline = (props) => (
   <div className="headline">
@@ -18,7 +20,7 @@ export default class Me extends React.Component {
 
         <div className="head">
           <div className="head__item">
-            <img src='https://placehold.jp/300x100.png' alt=''/>
+            <img src={me} alt='' width="200px" />
           </div>
         </div>
         <div className="portrait me-item">
