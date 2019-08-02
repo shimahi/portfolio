@@ -79,6 +79,9 @@ body {
     top: calc(100vh - 6px);
     @include mq-xs {
       top: calc(100vh - 3px);
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+        top: calc(102vh);
+      }
     }
   }
 }
@@ -147,11 +150,15 @@ head
   height: 100px;
   overflow: hidden;
   @include mq-xs {
-    margin-top: 45px;
+    margin-top: 25px;
     height: 70px;
+    position: relative;
+    z-index: 1;
+    right: -15px;
   }
   @include mq-xxs {
-    height: 30px;
+    right: -25px;
+    height: 56px;
   }
   &__item {
     position: absolute;
@@ -171,12 +178,11 @@ head
     }
     @include mq-xs {
       height: 60px;
-      top: 95px;
-      right: -22px;
+      right: -28px;
     }
     @include mq-xxs {
       height: 45px;
-      right: -40px;
+      right: -35px;
     }
   }
 }
