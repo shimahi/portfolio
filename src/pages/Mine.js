@@ -1,6 +1,7 @@
 import React from 'react';
 import Product from '../components/Product';
 import '../data/products.json'
+import Footer from '../Footer.js';
 
 export default class Mine extends React.Component {
   render() {
@@ -17,6 +18,7 @@ export default class Mine extends React.Component {
         <Product {...data.pachiwiki} />
         <Product {...data.biske} />
         <Product {...data.portfolio} />
+        <Footer />
       </div>
     );
   }

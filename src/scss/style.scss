@@ -26,7 +26,7 @@ body {
 }
 
 #root {
-  max-width: 1750px;
+  max-width: 1900px;
   margin: auto;
   display: -ms-grid;
   display: grid;
@@ -216,5 +216,18 @@ scroll
     cursor: pointer;
     transition: .3s;
     color: darken($blue, 10%);
+  }
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = =
+footer
+= = = = = = = = = = = = = = = = = = = = = = = = = = */
+footer {
+  margin-top: 60px;
+  color: #bbb;
+  font-size: .8rem;
+  margin-bottom: -20px;
+  @include mq-xs {
+    text-align: center;
   }
 }
