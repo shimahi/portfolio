@@ -59,7 +59,7 @@
   "portfolio": {
     "title": "Meminus",
     "subtitle": "しまひのポートフォリオサイト",
-    "image": "cap_qreate.png",
+    "image": "cap_meminus.png",
     "url": "https://shimahi.github.io/portfolio",
     "skills": ["Javascript", "React", "webpack", "node.js", "github-pages"],
     "git": "https://github.com/shimahi/portfolio",
