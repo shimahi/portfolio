@@ -16,7 +16,7 @@ Mine
     margin-bottom: 50px;
   }
   @include mq-sm {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   &__image {
     width: 100%;
@@ -65,6 +65,9 @@ Mine
         letter-spacing: 2.5px;
         margin-bottom: 5px;
         font-weight: bold;
+        @include mq-sm {
+          margin-top: 10px;
+        }
       }
       &__subtitle {
         color: #bbb;
