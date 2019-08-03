@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, NavLink, Switch } from "react-router-dom";
 export default class Menu extends React.Component {
   render() {
-
     return(
       <nav>
         <div className="navigation-items">
