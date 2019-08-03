@@ -21,6 +21,7 @@ import gar_10 from '../image/gar_10.jpg';
 import gar_11 from '../image/gar_11.jpg';
 import gar_12 from '../image/gar_12.jpg';
 import Footer from '../Footer.js';
+import us from '../image/us.svg';
 
 const bgArray = [bg_1, bg_2, bg_3, bg_4, bg_5, bg_6];
 
@@ -95,56 +96,58 @@ export default class Us extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
+        <div className="head">
+          <div className="head__item">
+            <img src={us} alt=''/>
+          </div>
+        </div>
         <Background image={this.state.image} />
-        <div className="container">
-          <p className="about-paroleise">paroleise(パロレズ)は、音楽・デザインを中心とした創作活動を行うサークルです。</p>
-          <div className="us-item">
-            <Headline title="MEMBER" subtitle="メンバー"/>
-            <Member name="しまひ" image={shimahi} post="企画 / 開発 / 作詞 / 作曲 / ギター"/>
-            <Member name="mochi" image={mochi} post="デザイン / イラスト / 作詞 / ボーカル"/>
-          </div>
-          <div className="us-item">
-            <Headline title="OVERVIEW" subtitle="概要"/>
-            <div className="overview">
-              <p>
-                曲を作るエンジニア「しまひ」と歌を歌うデザイナー「mochi」による同人ユニット。
-              </p>
-              <p>
-                2016年 福岡市博多区で結成。
-                <br/>
-                しまひが作曲・録音、mochiがボーカル・デザインを行い制作したCDを同人誌即売で頒布する活動を基本とするほか、
-                <br/>
-                他サークルとの合同楽曲制作、mochiによるタイポグラフィ(文字デザイン)同人誌の発行、音楽ライブ活動を続けている。
-                <br/>
-                Qreate -クリエイターの知識共有サイト のように、しまひがシステム開発、mochiがデザインを担当する
-                Webサービスの企画開発など、同人の枠を超えた創作活動を続けている。
-              </p>
-              <div className="overview__links">
-                <a href='https://m.soundcloud.com/paroleise' target='_blank' rel="noreferrer noopener">SoundCloud↗︎</a>
-                <a href='https://paroleise.booth.pm/' target='_blank' rel="noreferrer noopener">BOOTH↗︎</a>
-                <a href='https://github.com/paroleise' target='_blank' rel="noreferrer noopener">GitHub↗︎</a>
-              </div>
-            </div>
-          </div>
-          <div className="us-item">
-            <Headline title="Music" subtitle="楽曲サンプル"/>
-            <div className="music">
-              <iframe width="100%" height="120" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/611698656&color=%234c5c74&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-              <iframe width="100%" height="120" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/614439021&color=%234c5c74&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-              <iframe width="100%" height="120" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/484984596&color=%234c5c74&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-            </div>
-          </div>
-          <div className="us-item">
-            <Headline title="Garally" subtitle="参加イベントや作品の写真"/>
-            <div className="photos">
-              <Photos />
+        <p className="about-paroleise">paroleise(パロレズ)は、音楽・デザインを中心とした創作活動を行うサークルです。</p>
+        <div className="us-item">
+          <Headline title="MEMBER" subtitle="メンバー"/>
+          <Member name="しまひ" image={shimahi} post="企画 / 開発 / 作詞 / 作曲 / ギター"/>
+          <Member name="mochi" image={mochi} post="デザイン / イラスト / 作詞 / ボーカル"/>
+        </div>
+        <div className="us-item">
+          <Headline title="OVERVIEW" subtitle="概要"/>
+          <div className="overview">
+            <p>
+              曲を作るエンジニア「しまひ」と歌を歌うデザイナー「mochi」による同人ユニット。
+            </p>
+            <p>
+              2016年 福岡市博多区で結成。
+              <br/>
+              しまひが作曲・録音、mochiがボーカル・デザインを行い制作したCDを同人誌即売で頒布する活動を基本とするほか、
+              <br/>
+              他サークルとの合同楽曲制作、mochiによるタイポグラフィ(文字デザイン)同人誌の発行、音楽ライブ活動を続けている。
+              <br/>
+              Qreate -クリエイターの知識共有サイト のように、しまひがシステム開発、mochiがデザインを担当する
+              Webサービスの企画開発など、同人の枠を超えた創作活動を続けている。
+            </p>
+            <div className="overview__links">
+              <a href='https://m.soundcloud.com/paroleise' target='_blank' rel="noreferrer noopener">SoundCloud↗︎</a>
+              <a href='https://paroleise.booth.pm/' target='_blank' rel="noreferrer noopener">BOOTH↗︎</a>
+              <a href='https://github.com/paroleise' target='_blank' rel="noreferrer noopener">GitHub↗︎</a>
             </div>
           </div>
         </div>
-        <div className="container"><Footer /></div>
+        <div className="us-item">
+          <Headline title="Music" subtitle="楽曲サンプル"/>
+          <div className="music">
+            <iframe width="100%" height="120" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/611698656&color=%234c5c74&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            <iframe width="100%" height="120" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/614439021&color=%234c5c74&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            <iframe width="100%" height="120" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/484984596&color=%234c5c74&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+          </div>
+        </div>
+        <div className="us-item">
+          <Headline title="Garally" subtitle="参加イベントや作品の写真"/>
+          <div className="photos">
+            <Photos />
+          </div>
+        </div>
+        <Footer />
       </div>
-
     );
   }
 }
