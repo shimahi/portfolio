@@ -145,41 +145,56 @@ head
 = = = = = = = = = = = = = = = = = = = = = = = = = = */
 .head {
   height: 100px;
-  overflow: hidden;
+  width: 100%;
+  overflow-x: hidden;
   @include mq-xs {
-    margin-top: 25px;
-    height: 70px;
+    margin-top: 55px;
     position: relative;
     z-index: 1;
     right: -15px;
-  }
-  @include mq-xxs {
-    right: -25px;
-    height: 56px;
+    height: 80px;
+    &-mine {
+      position: relative;
+      top: -15px;
+    }
   }
   &__item {
     position: absolute;
-    right: -5px;
-    top: 5px;
-    img {
-      max-height: 100%;
-    }
-    @include mq-lg {
-      height: 130px;
+    right: 0;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    top: 0;
+    &.tall {
+      height: 400px;
+      top: -175px
     }
     @include mq-md {
-      height: 90px;
-    }
-    @include mq-sm {
-      height: 75px;
+      height: 70px;
+      &.tall {
+        height: 95px;
+        top: -25px
+      }
     }
     @include mq-xs {
       height: 60px;
-      right: -28px;
+      position: relative;
+      width: 100%;
+      z-index: 100;
+      &.tall {
+        height: 75px;
+        top: 0
+      }
     }
     @include mq-xxs {
       height: 45px;
-      right: -35px;
+      &.tall {
+        height: 58px;
+      }
+    }
+    img {
+      max-height: 100%;
     }
   }
 }

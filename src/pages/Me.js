@@ -24,10 +24,10 @@ export default class Me extends React.Component {
 
         <div className="head">
           <div className="head__item">
-            <img src={me} alt='' width="200px" />
+            <img src={me} alt=''  />
           </div>
         </div>
-        <div className="portrait me-item">
+        <div className="portrait">
           <img src={ore} alt="俺" />
         </div>
         <div className="profile me-item">
