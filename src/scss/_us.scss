@@ -53,13 +53,17 @@ Us
   @include headline;
 }
 
+.us-item {
+  margin-bottom: 50px;
+}
+
 .member {
   display: flex;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   padding: 0 40px;
   @include mq-xs {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding: 0 0 0 14px;
   }
   &__image {
@@ -106,6 +110,12 @@ Us
     justify-content: space-around;
     max-width: 500px;
     margin: 50px auto;
+    @include mq-sm {
+      margin: 30px auto 50px;
+    }
+    @include mq-xs {
+      margin: 20px auto 60px;
+    }
     a {
       color: darken($blue, 10%);
       padding-bottom: 2px;
