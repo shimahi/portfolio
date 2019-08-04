@@ -11,9 +11,6 @@ general
 = = = = = = = = = = = = = = = = = = = = = = = = = = */
 html {
   background-color: $blue;
-  @include mq-xs {
-  font-size: 90%;
-  }
 }
 body {
   background-color: $basecolor;
