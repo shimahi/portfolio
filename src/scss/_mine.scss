@@ -142,6 +142,7 @@ Mine
     }
     @include mq-xs {
       margin-top: 0;
+      line-height: calc(2rem - 2px);
     }
   }
 }
