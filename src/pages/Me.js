@@ -51,7 +51,7 @@ export default class Me extends React.Component {
           </div>
         </div>
 
-        <div className="skill me-item">
+        <div className="me-item">
           <Headline title="SKILL" subtitle="スキル" />
           <div className="profile-content">
             <Skill {...data.frontend} />
