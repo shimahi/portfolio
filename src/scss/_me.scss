@@ -22,7 +22,7 @@ Me
       padding: 0 10px;
     }
     @include mq-xs {
-      padding: 0 2px;
+      padding: 0;
     }
     &__links {
       display: flex;
@@ -116,7 +116,7 @@ Me
       }
     }
     @include mq-xs {
-      line-height: calc(2rem - 2px);
+      line-height: 1.8rem;
     }
   }
 }
