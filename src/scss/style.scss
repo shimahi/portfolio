@@ -157,14 +157,15 @@ head
     height: 80px;
     top: 0;
     &.tall {
-      height: 175px;
-      top: -60px
+      height: 105px;
+      top: -25px;
     }
     @include mq-md {
       height: 70px;
       &.tall {
         height: 95px;
-        top: -25px
+        top: -25px;
+        border: none;
       }
     }
     @include mq-xs {
@@ -174,7 +175,7 @@ head
       z-index: 100;
       &.tall {
         height: 75px;
-        top: 0
+        top: 0;
       }
     }
     @include mq-xxs {
