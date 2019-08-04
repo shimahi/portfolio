@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import './scss/style.scss';
 import { BrowserRouter as BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import Menu from './Menu';

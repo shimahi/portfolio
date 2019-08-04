@@ -3,6 +3,9 @@ Me
 = = = = = = = = = = = = = = = = = = = = = = = = = = */
 .me-item {
   margin-top: 75px;
+  @include mq-xs {
+    margin-top: 90px;
+  }
   a {
     color: darken($blue, 10%);
     &:hover {
@@ -46,6 +49,10 @@ Me
 }
 .profile {
   margin-top: 0px;
+  margin-bottom: 75px;
+  .headline__subtitle {
+    margin-top: -3px;
+  }
 }
 
 .portrait {
