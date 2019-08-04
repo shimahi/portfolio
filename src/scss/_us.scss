@@ -54,7 +54,10 @@ Us
 }
 
 .us-item {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  @include mq-xs {
+    margin-bottom: 75px;
+  }
 }
 
 .member {
@@ -146,7 +149,7 @@ Us
 .photos {
   padding: 0 40px;
   @include mq-xs {
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     padding: 0;
   }
   &__list {
