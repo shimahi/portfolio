@@ -43,7 +43,6 @@ export default class Me extends React.Component {
               九州大学音響設計学科卒業、AB型。
               <br/>
               ギターで曲を作って同人イベントに出展するのが趣味。
-              <br/>
             </p>
             <div className="profile-content__links">
               <a href='https://github.com/shimahi' target='_blank' rel="noreferrer noopener">GitHub↗︎</a>
@@ -65,19 +64,18 @@ export default class Me extends React.Component {
                 <p>
                   JavaScriptを中心としたフロントエンド技術全般に興味があり、特にReactが好きでスキル向上のため勉強を続けています。
                   <br/>
-                  既存の静的サイトのAMP化や、CMSサイトをハイパフォーマンスにするためのHeadless CMS
+                  既存の静的サイトのAMP化や、CMSサイトのハイパフォーマンスを上げるためのHeadless CMSの開発に取り組みたいです。
                   その他、関心があるのは以下のような技術です。
                 </p>
                 <ul>
                   <li>Next.jsでのアプリ開発</li>
                   <li>Three.js / HTML Canvasなどのグラフィック描画</li>
-                  <li>Rails API / Wordpress API を使用したHeadless CMS</li>
                   <li>Firebase / AzureなどのmBaaSを使った開発</li>
                   <li>TypeScript言語</li>
                 </ul>
                 <p>
-                  フロントエンド技術に関心が高いのは、複雑なシステムを構築するよりもUIやアニメーションを作ったり、
-                  サービスのデザインについて考える方が好きだからです。
+                  Webサービスのデザインについて考えることが好きで、わかりやすくて楽しいUIを設計したり、
+                  パフォーマンスを上げてより快適な体験を与えたいと考えており、そのため上記のフロントエンド技術に高い関心を持っています。
                   <br/>
                   未経験分野では、スマホアプリ開発(Swift / Kotlin / React Native)をやってみたいです。
                 </p>
@@ -90,36 +88,36 @@ export default class Me extends React.Component {
           <div className="profile-content">
             <p>
               〜2017年<Nbsp />
-              九州大学音響設計学科卒業、デザイン・音響・メディアアートなどを学び、聴覚についての卒論を書く。
+              九州大学音響設計学科卒業、デザイン・波動工学・生理学・電気工学・メディアアートなどを学び、聴覚体制化についての卒論を書く。
+              学外ではオーケストラやバンド活動の他、インスタレーションの設営や自治寮の運営に携わる。
             </p>
             <span className="arrow-bottom">↓</span>
             <p>
               2018 春<Nbsp />
-              ノベルティ制作会社でカスタマーサポートの仕事をする
+              ノベルティ制作会社でカスタマーサポートの仕事をする。
               <br/>
               DTPオペレーションを通してIllustratorやPhotoshopの基礎を取得。
               <br/>
-              以前から開発の仕事がしたかったため5月末で退職
+              以前から開発の仕事がしたかったため5月末で退職。
             </p>
             <span className="arrow-bottom">↓</span>
             <p>
               2018 夏<Nbsp />
               デザイン事務所でアルバイトを始め、印刷物・Webのデザインや写真素材の作成などを行う。
               <br/>
-              Web制作の仕事も担当し、HTMLコーディングやWordpress構築を得る。
+              Web制作の仕事も担当し、HTMLコーディングやWordpress構築の経験を得る。
               <br/>
               また、独学でRubyの勉強を続け、個人でWebサービスをリリースするなど、Web開発の経験を積んでゆく。
               <br/>
               約4ヶ月フルタイムでアルバイトを続け、就職活動に成功したため退職。
             </p>
             <span className="arrow-bottom">↓</span>
-            <p>2018 秋〜<Nbsp />
-            IT企業でWebプログラマとして勤務(現職)
-
+            <p>2018 秋<Nbsp />
+              IT企業でWebプログラマとして勤務(現職)
             </p>
             <span className="arrow-bottom">↓</span>
             <p>2019 夏〜<Nbsp />
-            パートナーが名古屋の企業に就職したため、名古屋への引っ越し・転職を準備し始める。<br/>
+            九州に住んでいたパートナーが大学を卒業して名古屋の企業に就職したため、名古屋への引っ越し・転職を準備し始める。<br/>
             面白い企画をやっていて、Webの経験が活かせるような企業を探し中。。。
             </p>
           </div>
@@ -128,14 +126,25 @@ export default class Me extends React.Component {
         <div className="stance me-item">
           <Headline title="STANCE" subtitle="やりたいこと・求めてること" />
           <div className="profile-content">
-            いぬ〜
-          </div>
-        </div>
-
-        <div className="ability me-item">
-          <Headline title="ABILITY" subtitle="できること" />
-          <div className="profile-content">
-            いぬいぬ〜
+            <p>
+              toC向け自社サービスの企画開発に携わる仕事を探しています。
+              <br/>
+              特に、メディア運営に興味があり、マークアップ、サーバーサイド構築、デザインについて自分のスキルを活かしたいと考えています。
+            </p>
+            <p>
+              誰のためにサービスを作るか、なぜこのサービスに価値があるのか、を考える姿勢は一貫して大切にしています。
+              <br/>
+              エンジニアとして働きたい。というよりも、面白い企画を形にしていくためのメンバーとして働き、その上で自分の持っているWeb技術を活かしたい。という意識を持っています。
+            </p>
+            <p>
+              やらされ作業になった途端パフォーマンスが下がるので、なぜ作るのか、という目的・全体像を常に共有できるチームで仕事をしたいです。
+              プログラマー・デザイナー・ライターが完全に仕事を分離しているのも良くないと思っていて、成果物に対して改善案があれば意見はしっかり言いますし、チーム内に意見を言い合える風土があることを望んでいます。
+            </p>
+            <p>
+              技術的な領域では、スキル欄で書いてあるようにフロントエンド技術を活かせる仕事がしたいと思っています。
+              <br/>
+              しかし、前述の通り「何をするか」よりも「なぜするか」を一番の軸にしており、言語や技術のトレンドよりも、チーム内環境や企画に共感できるかがどうかを重要視しています。
+            </p>
           </div>
         </div>
 
@@ -143,7 +152,7 @@ export default class Me extends React.Component {
           <Headline title="CONTACT" subtitle="連絡先" />
           <div className="profile-content">
             <p>
-              twitterのDMを開放しているので、何かあればご連絡ください
+              twitterのDMを開放しているので、お気軽にご連絡ください。
             </p>
             <span className="arrow-bottom">↓</span>
             <p className="contact-dm">

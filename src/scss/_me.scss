@@ -15,6 +15,7 @@ Me
   .profile-content {
     padding: 0 40px;
     line-height: 1.8rem;
+    max-width: 900px;
     @include mq-lg {
       padding: 0 20px;
     }
