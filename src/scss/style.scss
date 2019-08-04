@@ -141,7 +141,7 @@ head
   width: 100%;
   overflow-x: hidden;
   @include mq-xs {
-    margin-top: 55px;
+    margin-top: 38px;
     position: relative;
     z-index: 1;
     right: -15px;
@@ -215,7 +215,7 @@ scroll
   @include mq-xs {
     font-size: .9rem;
     width: 100px;
-    bottom: 4vh;
+    bottom: 2vh;
     span {
       font-size: 1.8rem;
     }
