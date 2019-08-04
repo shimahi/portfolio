@@ -157,8 +157,8 @@ head
     height: 80px;
     top: 0;
     &.tall {
-      height: 400px;
-      top: -175px
+      height: 175px;
+      top: -60px
     }
     @include mq-md {
       height: 70px;
