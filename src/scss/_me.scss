@@ -78,11 +78,11 @@ Me
   }
   &__title {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 15px;
     &-decoration {
       color: $blue;
-      font-size: .7rem;
+      font-size: .9rem;
       margin-right: 6px;
     }
   }
@@ -114,6 +114,9 @@ Me
       &:hover {
         color: $blue;
       }
+    }
+    @include mq-xs {
+      line-height: calc(2rem - 2px);
     }
   }
 }
