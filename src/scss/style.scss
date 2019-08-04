@@ -74,10 +74,7 @@ body {
   }
   &:last-child {
     border-top: solid 7px $blue;
-    top: calc(100vh - 7px);
-    @include mq-xs {
-      top: calc(100vh - 7px);
-    }
+    bottom: 0;
   }
 }
 
