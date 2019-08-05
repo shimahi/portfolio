@@ -16,7 +16,7 @@
     "title": "さがん歴史地図",
     "subtitle": "古今東西の佐賀を知る、歴史できごとマップ",
     "image": "cap_saga.png",
-    "url": "http://sagahistory.herokuapp.com",
+    "url": "https://sagahistory.herokuapp.com",
     "skills": ["Rails", "Heroku"],
     "git": "https://github.com/paroleise/saga_history",
     "content": [
