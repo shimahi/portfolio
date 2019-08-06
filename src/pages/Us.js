@@ -24,7 +24,6 @@ import Footer from '../Footer.js';
 import us from '../image/us.svg';
 
 const bgArray = [bg_1, bg_2, bg_3, bg_4, bg_5, bg_6];
-
 const photoArray = [gar_1, gar_2, gar_3, gar_4, gar_5, gar_6, gar_7, gar_8, gar_9, gar_10, gar_11, gar_12]
 
 const Headline = (props) => (

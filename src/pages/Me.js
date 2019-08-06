@@ -111,7 +111,8 @@ export default class Me extends React.Component {
               約4ヶ月フルタイムでアルバイトを続け、就職活動に成功したため退職。
             </p>
             <span className="arrow-bottom">↓</span>
-            <p>2018 秋<Nbsp />
+            <p>
+              2018 秋<Nbsp />
               IT企業でWebプログラマとして勤務(現職)
               <br/>
               信販企業の業務システムの受託開発・保守や、自社サービスのシステム開発(主にRuby on Rails)のほか、ホームページ制作やCMSの開発を担当する。
@@ -121,8 +122,9 @@ export default class Me extends React.Component {
               業務外でもWebアプリを開発したりReact等の新しい技術を勉強したりするなど、日常的にWebプログラミングを継続している。
             </p>
             <span className="arrow-bottom">↓</span>
-            <p>2019 夏〜<Nbsp />
-              婚約者が名古屋の企業に就職したため、名古屋への引っ越し・転職を準備し始める。
+            <p>
+              2019 夏〜<Nbsp />
+              婚約者が大学を卒業して名古屋の企業に就職したため、名古屋への引っ越し・転職を準備し始める。
               <br/>
               面白い企画をやっていて、Webの経験が活かせるような企業を探し中。。。
             </p>
