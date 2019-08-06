@@ -122,7 +122,7 @@ export default class Me extends React.Component {
             </p>
             <span className="arrow-bottom">↓</span>
             <p>2019 夏〜<Nbsp />
-              九州に住んでいたパートナーが大学を卒業して名古屋の企業に就職したため、名古屋への引っ越し・転職を準備し始める。
+              婚約者が名古屋の企業に就職したため、名古屋への引っ越し・転職を準備し始める。
               <br/>
               面白い企画をやっていて、Webの経験が活かせるような企業を探し中。。。
             </p>
