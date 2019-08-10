@@ -124,9 +124,9 @@ export default class Me extends React.Component {
             <span className="arrow-bottom">↓</span>
             <p>
               2019 夏〜<Nbsp />
-              婚約者が大学を卒業して名古屋の企業に就職したため、名古屋への引っ越し・転職を準備し始める。
+              婚約者が大学を卒業して名古屋の企業に就職したため、名古屋への引っ越し準備を始める。
               <br/>
-              面白い企画をやっていて、Webの経験が活かせるような企業を探し中。。。
+              転職やクラウド応募の自己紹介用にこのポートフォリオサイトを制作する。
             </p>
           </div>
         </div>
@@ -135,7 +135,7 @@ export default class Me extends React.Component {
           <Headline title="STANCE" subtitle="やりたいこと・求めてること" />
           <div className="profile-content">
             <p>
-              toC向け自社サービスの企画開発に携わる仕事を探しています。
+              toC向けサービスの企画開発に携わる仕事を探しています。
               <br/>
               特に、メディア運営に興味があり、マークアップ、サーバーサイド構築、デザインについて自分のスキルを活かしたいと考えています。
             </p>
