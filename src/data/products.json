@@ -49,7 +49,7 @@
     "skills": ["Rails", "Capistrano", "Stripe", "ConoHa VPS", "ThinReports"],
     "git": "https://github.com/shimahi/novelty",
     "content": [
-      "木製ノベルティのオーダーメイドサービス「Biske!」の入稿システム・受注管理システムです。",
+      "レーザー加工機による木製ノベルティのオーダーメイドサービス「Biske!」の入稿システム・受注管理システムです。",
       "データ入稿 → 入稿データ管理 → 伝票類作成 → 決済 → 進捗管理という流れで注文を管理できます。(デモ動画をご覧ください)",
       "カード決済サービスにStripe、PDF作成にThinReportsを使用しました。",
       "インフラはConoHa VPSを導入し、Linuxサーバーでの本番環境構築を行いました。デプロイにはCapistranoを使用しています。",
