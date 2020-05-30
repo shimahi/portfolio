@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+
+:root {
+  --base: #f5f5f5;
+  --blue: #00ede4;
+  --gray: #c3c4c5;
+  --darkblue: #00a19a;
+}
+
+body {
+  background-color: var(--blue);
+  color: #777;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+p a {
+  color: var(--darkblue)
+}
+
+button, a {
+  &:hover {
+    cursor: pointer;
+    opacity: .8;
+  }
+}

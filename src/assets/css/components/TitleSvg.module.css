@@ -1,0 +1,40 @@
+.titleSvg {
+  overflow-x: hidden;
+  height: 65px;
+  position: relative;
+  @media (--sm) {
+    height: 120px;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+.titleSvg__item {
+  display: flex;
+  justify-content: flex-end;
+  height: 48px;
+  position: absolute;
+  top: 12px;
+  right: -92px;
+  @media (--sm) {
+    top: -1px;
+    right: -53px;
+    height: 80px;
+  }
+  &.mine {
+      top: 0;
+      height: 60px;
+    right: -65px;
+    @media (--sm) {
+      height: 114px;
+      right: 0px;
+      top: -35px;
+    }
+  }
+  &.us {
+    @media (--sm) {
+      right: -63px;
+    }
+  }
+}
