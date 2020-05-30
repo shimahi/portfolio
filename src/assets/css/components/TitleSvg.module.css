@@ -2,6 +2,7 @@
   overflow-x: hidden;
   height: 65px;
   position: relative;
+  border: solid 2px red;
   @media (--sm) {
     height: 120px;
     right: 0;
