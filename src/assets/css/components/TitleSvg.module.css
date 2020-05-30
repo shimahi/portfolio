@@ -15,26 +15,49 @@
   justify-content: flex-end;
   height: 48px;
   position: absolute;
-  top: 12px;
-  right: -92px;
-  @media (--sm) {
-    top: -1px;
-    right: -53px;
-    height: 80px;
+  top: 0;
+  right: 0;
+
+  &.index {
+    & img {
+      width: 99px;
+    }
+    @media (--sm) {
+      top: -1px;
+      right: -53px;
+      height: 80px;
+      & img {
+        width: inherit;
+      }
+    }
   }
   &.mine {
-      top: 0;
-      height: 60px;
-    right: -65px;
+    & img {
+      width: 150px;
+      height: 55px;
+    }
     @media (--sm) {
       height: 114px;
       right: 0px;
       top: -35px;
+      & img {
+        width: inherit;
+        height: inherit;
+      }
     }
   }
   &.us {
+    & img {
+      height: 50px;
+      width: 85px;
+    }
     @media (--sm) {
-      right: -63px;
+      right: 0;
+       height: 80px;
+      & img {
+        width: inherit;
+        height: inherit;
+      }
     }
   }
 }
