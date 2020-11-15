@@ -1,5 +1,10 @@
-import 'twin.macro'
+import { Layout } from 'components/_layouts'
+import { WorksTemplate } from 'components/templates'
 
-export const IndexTemplate = () => {
-  return <article tw="pt-16 sm:pt-32 container mx-auto">つくったもの</article>
+export default function Works() {
+  return (
+    <Layout>
+      <WorksTemplate />
+    </Layout>
+  )
 }

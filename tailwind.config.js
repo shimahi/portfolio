@@ -6,6 +6,13 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
+      screens: {
+        xs: { max: '450px' },
+        xxl: '1780px',
+      },
+      maxWidth: {
+        xxl: '1780px',
+      },
       colors: {
         main: '#00ede4',
         dark: '#00a19a',
