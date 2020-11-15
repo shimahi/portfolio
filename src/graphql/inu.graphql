@@ -1,6 +1,9 @@
-query getInu {
-  inu {
-    name
-    age
+query getArticles {
+  articles {
+    id
+    Slug
+    Date
+    Published
+    Page
   }
 }
