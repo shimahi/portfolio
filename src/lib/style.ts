@@ -5,6 +5,8 @@ export const md = `@media(min-width: 768px)`
 export const lg = `@media(min-width: 1024px)`
 export const xl = `@media(min-width: 1280px)`
 
+export const mainColor = '#00ede4'
+
 export const fixAspectRatio = (x: number, y: number) => css`
   &:before {
     content: '';
