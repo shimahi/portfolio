@@ -1,8 +1,9 @@
 import React from 'react'
 import { AppProps } from 'next/app'
-import 'ress'
 import { Global, css } from '@emotion/react'
 import AppProvider from 'store'
+import 'ress'
+import tw from 'twin.macro'
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -19,8 +20,11 @@ export default App
 
 const globalStyles = css`
   html {
-    width: 100vw;
-    overflow-x: hidden;
+    ${tw`w-screen overflow-x-hidden bg-main`}
+  }
+
+  body {
+    ${tw`bg-base text-text font-noto tracking-wide`}
   }
 
   a {

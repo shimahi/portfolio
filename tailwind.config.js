@@ -1,11 +1,34 @@
 module.exports = {
   future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
   },
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        main: '#00ede4',
+        dark: '#00a19a',
+        lightGray: '#c3c4c5',
+        base: '#f5f5f5',
+        text: '#777',
+      },
+      fontFamily: {
+        noto: [
+          'Noto Sans JP',
+          'Yu Gothic',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Helvetica Neue',
+          '游ゴシック Medium',
+          'YuGothic',
+          'YuGothicM',
+          'メイリオ',
+          'Meiryo',
+          'sans-serif',
+        ],
+      },
+    },
   },
   variants: {},
   plugins: [],
