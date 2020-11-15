@@ -4,7 +4,7 @@ import 'twin.macro'
 export const Nav = () => {
   return (
     <nav tw="pb-2 flex items-center flex-col-reverse sm:flex-col sm:(w-48 pb-8) lg:w-56 xl:w-64">
-      <div className="group" tw="flex w-4/5 mx-auto justify-around items-center sm:(flex-col mt-16 w-full) lg:mt-32">
+      <div className="group" tw="flex w-4/5 mx-auto justify-around items-center sm:(flex-col mt-16 w-auto) lg:mt-32">
         <NavItem href="/" text="top" />
         <NavItem href="/works" text="works" />
         <NavItem href="/other" text="other" />

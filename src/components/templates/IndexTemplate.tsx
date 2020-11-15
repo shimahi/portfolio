@@ -4,7 +4,7 @@ import 'twin.macro'
 
 export const IndexTemplate = () => {
   return (
-    <article tw="pt-16 sm:pt-32">
+    <article tw="pt-8 px-4 sm:pt-32">
       <Portrait />
       <p tw="mt-2">見ていただいてありがとうございます。名前だけでも覚えてください。</p>
       <section tw="mt-16">
