@@ -1,36 +1,90 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
+  "name": "client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "next build"
+    "build": "next build",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
+    "codegen": "graphql-codegen -r dotenv/config",
+    "start": "next start",
+    "export": "next export"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "babelMacros": {
+    "twin": {
+      "styled": {
+        "import": "default",
+        "from": "@emotion/styled"
+      },
+      "css": {
+        "import": "css",
+        "from": "@emotion/react"
+      },
+      "global": {
+        "import": "Global",
+        "from": "@emotion/react"
+      }
+    }
   },
   "dependencies": {
-    "next": "9.4.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "@apollo/client": "^3.2.5",
+    "@emotion/css": "^11.0.0",
+    "@emotion/react": "^11.0.0",
+    "@emotion/server": "^11.0.0",
+    "@emotion/styled": "^11.0.0",
+    "apollo-server-micro": "^2.19.0",
+    "graphql": "^15.4.0",
+    "next": "^10.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "ress": "^3.0.0",
+    "twin.macro": "^1.12.1"
   },
   "devDependencies": {
-    "@types/node": "^14.0.5",
-    "@types/react": "^16.9.35",
-    "autoprefixer": "^9.8.0",
-    "css-mqpacker": "^7.0.0",
-    "doiuse": "^4.2.0",
-    "file-loader": "^6.0.0",
-    "postcss-custom-media": "^7.0.8",
-    "postcss-custom-properties": "^9.1.1",
-    "postcss-nesting": "^7.0.1",
-    "postcss-pxtorem": "^5.1.1",
-    "ress": "^2.0.4",
-    "strip-ansi": "^6.0.0",
-    "typescript": "^3.9.3",
-    "url-loader": "^4.1.0"
-  },
-  "browserslist": [
-    ">0.3%",
-    "ie 11",
-    "not dead",
-    "not op_mini all"
-  ]
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "@emotion/babel-preset-css-prop": "^11.0.0",
+    "@graphql-codegen/cli": "^1.19.1",
+    "@graphql-codegen/typescript": "^1.17.11",
+    "@graphql-codegen/typescript-operations": "^1.17.9",
+    "@graphql-codegen/typescript-react-apollo": "^2.1.1",
+    "@types/node": "^14.14.7",
+    "@types/react": "^16.9.56",
+    "@types/react-dom": "^16.9.9",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "babel-loader": "^8.2.1",
+    "css-loader": "^5.0.1",
+    "dotenv-webpack": "^5.1.0",
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
+    "prettier": "^2.1.2",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.0.5",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
