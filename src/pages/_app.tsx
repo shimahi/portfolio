@@ -3,6 +3,7 @@ import { AppProps } from 'next/app'
 import { Global, css } from '@emotion/react'
 import AppProvider from 'store'
 import 'ress'
+import 'react-notion/src/styles.css'
 import tw from 'twin.macro'
 
 const App = ({ Component, pageProps }: AppProps) => {
