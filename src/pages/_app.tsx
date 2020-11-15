@@ -1,16 +1,29 @@
-import 'ress'
-import 'assets/css/foundation/global.css'
+import React from 'react'
 import { AppProps } from 'next/app'
-import { useState } from 'react'
-import { pageContext } from 'contexts/pageContext'
+import 'ress'
+import { Global, css } from '@emotion/react'
+import AppProvider from 'store'
 
 const App = ({ Component, pageProps }: AppProps) => {
-  const [pageState, setPageState] = useState('index')
   return (
-    <pageContext.Provider value={[pageState, setPageState]}>
-      <Component {...pageProps} />
-    </pageContext.Provider>
+    <AppProvider>
+      <>
+        <Global styles={globalStyles} />
+        <Component {...pageProps} />
+      </>
+    </AppProvider>
   )
 }
 
 export default App
+
+const globalStyles = css`
+  html {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  a {
+    text-decoration: none;
+  }
+`
