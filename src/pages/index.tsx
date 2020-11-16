@@ -10,7 +10,6 @@ export default function Index({ blockMap }: PageProps) {
   )
 }
 
-// TODO: ISRさせる
 export async function getStaticProps() {
   const blockMap = await fetch(`https://notion-api.splitbee.io/v1/page/${process.env.TOP_PAGE_ID}`, {
     headers: { Authorization: `Bearer ${process.env.NOTION_TOKEN}` },
