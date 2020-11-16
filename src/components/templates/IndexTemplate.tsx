@@ -1,6 +1,7 @@
 import { Portrait } from 'components/organisms'
-import tw, { css } from 'twin.macro'
+import { nortionArticle } from 'lib'
 import { PageProps } from 'types'
+import 'twin.macro'
 import { NotionRenderer } from 'react-notion'
 
 export const IndexTemplate = (props: PageProps) => {
@@ -13,22 +14,3 @@ export const IndexTemplate = (props: PageProps) => {
     </article>
   )
 }
-
-const nortionArticle = css`
-  * {
-    ${tw`text-text`}
-  }
-  h1,
-  h2 {
-    ${tw`relative clearfix block z-50 font-noto  text-2xl`}
-    &:after {
-      ${tw`bg-main absolute inline-block`}
-      width: 1.5px;
-      left: 0;
-      top: -6px;
-      height: 60px;
-      z-index: -1;
-      transform: rotate(45deg);
-    }
-  }
-`
