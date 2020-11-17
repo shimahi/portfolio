@@ -1,6 +1,7 @@
 import { Layout } from 'components/_layouts'
 import { WorksTemplate } from 'components/templates'
 import { PageProps } from 'types'
+import { BlockMapType } from 'react-notion'
 
 export default function Works({ blockMap }: PageProps) {
   return (
@@ -11,7 +12,7 @@ export default function Works({ blockMap }: PageProps) {
 }
 
 export async function getStaticProps() {
-  const blockMap = await fetch(`https://notion-api.splitbee.io/v1/page/${process.env.WORKS_PAGE_ID}`, {
+  const blockMap: BlockMapType = await fetch(`https://notion-api.splitbee.io/v1/page/${process.env.WORKS_PAGE_ID}`, {
     headers: { Authorization: `Bearer ${process.env.NOTION_TOKEN}` },
   }).then((res) => res.json())
 
@@ -19,6 +20,6 @@ export async function getStaticProps() {
     props: {
       blockMap,
     },
-    revalidate: 60,
+    revalidate: 1,
   }
 }

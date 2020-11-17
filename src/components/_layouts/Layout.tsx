@@ -19,7 +19,7 @@ export const Layout = ({ children }: LayoutProps) => {
       <Frame>
         <div tw="max-w-xxl mx-auto flex flex-col sm:flex-row">
           <Nav />
-          <div tw="xxl:ml-16">{children}</div>
+          <div tw="flex-1 xxl:ml-16">{children}</div>
         </div>
       </Frame>
     </>
