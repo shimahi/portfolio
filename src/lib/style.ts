@@ -12,6 +12,8 @@ export const nortionArticle = css`
   * {
     ${tw`text-text`}
   }
+  width: 100%;
+  background: white;
   h1,
   h2 {
     ${tw`relative clearfix block z-50 font-noto  text-2xl`}
