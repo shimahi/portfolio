@@ -5,20 +5,37 @@ export const sm = `@media(min-width: 640px)`
 export const md = `@media(min-width: 768px)`
 export const lg = `@media(min-width: 1024px)`
 export const xl = `@media(min-width: 1280px)`
+export const xxl = `@media(min-width: 1480px)`
 
 export const mainColor = '#00ede4'
 
-export const nortionArticle = css`
-  ${tw`flex`}
-  * {
-    ${tw`text-text font-noto`}
-  }
-  main {
-    ${tw`lg:max-w-screen-lg m-0`}
-  }
+export const nortionStyle = css`
+  ${tw`flex max-w-full md:pr-8 text-text max-w-full font-noto`}
   @media (min-width: 768px) {
-    .notion-asset-wrapper > div {
+    max-width: calc(100vw - 16rem) !important;
+  }
+
+  main {
+    ${tw`max-w-full lg:max-w-screen-lg m-0`}
+  }
+
+  .notion-asset-wrapper > div {
+    @media (min-width: 768px) {
       align-self: start !important;
+    }
+  }
+
+  figure {
+    img {
+      max-width: 700px;
+    }
+    & > div {
+      @media (min-width: 768px) {
+        justify-content: flex-start !important;
+      }
+    }
+    & + h3 {
+      margin-top: 0;
     }
   }
 
@@ -37,6 +54,7 @@ export const nortionArticle = css`
       transform: rotate(45deg);
     }
   }
+
   .notion-h2 a {
     color: #112;
     svg {
@@ -52,7 +70,16 @@ export const nortionArticle = css`
       font-weight: 700;
     }
   }
+
   .notion-callout-text {
     font-family: 'Roboto Mono', monospace;
+    @media (max-width: 415px) {
+      font-size: 13px;
+    }
+  }
+  .notion-page-icon {
+    @media (max-width: 415px) {
+      display: none;
+    }
   }
 `

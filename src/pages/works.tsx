@@ -21,6 +21,6 @@ export async function getStaticProps() {
     props: {
       recordMap,
     },
-    revalidate: 60,
+    revalidate: 1,
   }
 }

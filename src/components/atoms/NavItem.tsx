@@ -14,7 +14,7 @@ export const NavItem = ({ href, text }: NavItemProps) => {
   return (
     <Link href={href}>
       <a
-        tw="relative block text-center cursor-pointer sm:hover:opacity-75 pt-6 pb-4 sm:py-8"
+        tw="relative block text-center cursor-pointer md:hover:opacity-75 pt-6 pb-4 md:py-8"
         css={css`
           &:hover > div {
             background-color: ${mainColor}!important;

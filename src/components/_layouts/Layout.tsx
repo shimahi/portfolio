@@ -21,9 +21,9 @@ export const Layout = ({ children }: LayoutProps) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Frame>
-        <div tw="max-w-screen-xxl mx-auto flex flex-col sm:flex-row">
+        <div tw="max-w-screen-xxl mx-auto flex flex-col md:flex-row">
           <Nav />
-          <div tw="flex-1 xxl:ml-16">{children}</div>
+          <div tw="flex-1 md:ml-48 lg:ml-56 xl:ml-64">{children}</div>
         </div>
       </Frame>
     </>
