@@ -10,13 +10,6 @@ export default function Works({ blockMap }: PageProps) {
   )
 }
 
-export async function getStaticPaths() {
-  return {
-    paths: [],
-    fallback: true,
-  }
-}
-
 export async function getStaticProps() {
   const blockMap = await fetch(`https://notion-api.splitbee.io/v1/page/${process.env.WORKS_PAGE_ID}`, {
     headers: { Authorization: `Bearer ${process.env.NOTION_TOKEN}` },
