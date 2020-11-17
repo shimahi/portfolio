@@ -8,17 +8,17 @@ module.exports = {
     extend: {
       screens: {
         xs: { max: '450px' },
-        xxl: '1780px',
+        xxl: '1480px',
       },
       maxWidth: {
-        xxl: '1780px',
+        xxl: '1480px',
       },
       colors: {
         main: '#00ede4',
         dark: '#00a19a',
         lightGray: '#c3c4c5',
-        base: '#f5f5f5',
-        text: '#777',
+        baseColor: '#f5f5f5',
+        text: '#666',
       },
       fontFamily: {
         noto: [

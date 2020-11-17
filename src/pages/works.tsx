@@ -1,25 +1,26 @@
 import { Layout } from 'components/_layouts'
 import { WorksTemplate } from 'components/templates'
-import { PageProps } from 'types'
-import { BlockMapType } from 'react-notion'
+import { NotionAPI } from 'notion-client'
+import { ExtendedRecordMap } from 'notion-types'
 
-export default function Works({ blockMap }: PageProps) {
+export default function Works({ recordMap }: { recordMap: ExtendedRecordMap }) {
   return (
     <Layout>
-      <WorksTemplate blockMap={blockMap} />
+      <WorksTemplate recordMap={recordMap} />
     </Layout>
   )
 }
 
 export async function getStaticProps() {
-  const blockMap: BlockMapType = await fetch(`https://notion-api.splitbee.io/v1/page/${process.env.WORKS_PAGE_ID}`, {
-    headers: { Authorization: `Bearer ${process.env.NOTION_TOKEN}` },
-  }).then((res) => res.json())
+  const notion = new NotionAPI({
+    authToken: process.env.NOTION_TOKEN,
+  })
+  const recordMap = await notion.getPage(process.env.WORKS_PAGE_ID)
 
   return {
     props: {
-      blockMap,
+      recordMap,
     },
-    revalidate: 1,
+    revalidate: 60,
   }
 }
