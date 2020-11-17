@@ -3,7 +3,7 @@ import { AppProps } from 'next/app'
 import { Global, css } from '@emotion/react'
 import AppProvider from 'store'
 import 'ress'
-import 'react-notion/src/styles.css'
+import 'react-notion-x/src/styles.css'
 import tw from 'twin.macro'
 
 const App = ({ Component, pageProps }: AppProps) => {
@@ -25,7 +25,7 @@ const globalStyles = css`
   }
 
   body {
-    ${tw`bg-base text-text font-noto tracking-wide`}
+    ${tw`bg-baseColor text-text font-noto tracking-wide`}
   }
 
   a {

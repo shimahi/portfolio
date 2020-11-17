@@ -1,23 +1,25 @@
 import { Layout } from 'components/_layouts'
 import { IndexTemplate } from 'components/templates'
-import { PageProps } from 'types'
+import { NotionAPI } from 'notion-client'
+import { ExtendedRecordMap } from 'notion-types'
 
-export default function Index({ blockMap }: PageProps) {
+export default function Index({ recordMap }: { recordMap: ExtendedRecordMap }) {
   return (
     <Layout>
-      <IndexTemplate blockMap={blockMap} />
+      <IndexTemplate recordMap={recordMap} />
     </Layout>
   )
 }
 
 export async function getStaticProps() {
-  const blockMap = await fetch(`https://notion-api.splitbee.io/v1/page/${process.env.TOP_PAGE_ID}`, {
-    headers: { Authorization: `Bearer ${process.env.NOTION_TOKEN}` },
-  }).then((res) => res.json())
+  const notion = new NotionAPI({
+    authToken: process.env.NOTION_TOKEN,
+  })
+  const recordMap = await notion.getPage(process.env.TOP_PAGE_ID)
 
   return {
     props: {
-      blockMap,
+      recordMap,
     },
     revalidate: 60,
   }
