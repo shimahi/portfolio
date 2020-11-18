@@ -1,5 +1,5 @@
 import { NavItem } from 'components/atoms'
-import { xxl } from 'lib'
+import { xl } from 'lib'
 import { css } from 'twin.macro'
 
 export const Nav = () => {
@@ -7,8 +7,8 @@ export const Nav = () => {
     <nav
       tw="pb-2 flex items-center flex-col-reverse md:(fixed h-screen left-0 z-50 flex-col w-48 pb-8) lg:(w-56) xl:(w-64)"
       css={css`
-        ${xxl} {
-          left: calc(50vw - 740px) !important;
+        ${xl} {
+          left: calc(50vw - 640px) !important;
         }
       `}
     >

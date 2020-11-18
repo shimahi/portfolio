@@ -8,10 +8,6 @@ module.exports = {
     extend: {
       screens: {
         xs: { max: '450px' },
-        xxl: '1480px',
-      },
-      maxWidth: {
-        xxl: '1480px',
       },
       colors: {
         main: '#00ede4',
