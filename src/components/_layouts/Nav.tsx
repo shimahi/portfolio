@@ -15,7 +15,7 @@ export const Nav = () => {
       <div className="group" tw="flex w-4/5 mx-auto justify-around items-center md:(flex-col mt-16 w-auto) lg:mt-32">
         <NavItem href="/" text="top" />
         <NavItem href="/works" text="works" />
-        <NavItem href="/other" text="other" />
+        <NavItem href="/blog" text="blog" />
       </div>
 
       <div tw="mt-4 md:mt-24 text-lightGray font-bold select-none opacity-75 transform md:rotate-90">
