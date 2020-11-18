@@ -84,4 +84,8 @@ export const nortionStyle = css`
       display: none;
     }
   }
+
+  .notion-blue .notion-inline-code {
+    color: #00a19a;
+  }
 `
