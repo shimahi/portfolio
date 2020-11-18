@@ -26,10 +26,14 @@ export const nortionStyle = css`
   }
 
   figure {
+    ${tw`max-w-full md:max-w-screen-md`}
     img {
+      width: 100%;
+      height: auto;
       max-width: 700px;
     }
     & > div {
+      display: block !important; //これないとSafariで縦サイズが崩れる
       @media (min-width: 768px) {
         justify-content: flex-start !important;
       }
