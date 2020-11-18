@@ -89,5 +89,6 @@ export const nortionStyle = css`
     color: #00a19a;
     background: white;
     border: solid 1px #bcd;
+    line-height: 1.9rem;
   }
 `
