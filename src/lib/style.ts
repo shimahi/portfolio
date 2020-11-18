@@ -10,7 +10,7 @@ export const xxl = `@media(min-width: 1480px)`
 export const mainColor = '#00ede4'
 
 export const nortionStyle = css`
-  ${tw`flex max-w-full md:pr-8 text-text max-w-full font-noto`}
+  ${tw`flex pb-24 max-w-full md:pr-8 text-text max-w-full font-noto`}
   @media (min-width: 768px) {
     max-width: calc(100vw - 16rem) !important;
   }
