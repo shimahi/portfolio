@@ -87,5 +87,7 @@ export const nortionStyle = css`
 
   .notion-blue .notion-inline-code {
     color: #00a19a;
+    background: white;
+    border: solid 1px #bcd;
   }
 `
