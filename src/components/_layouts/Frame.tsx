@@ -1,7 +1,15 @@
 import { ReactNode } from 'react'
 import tw, { styled } from 'twin.macro'
 
-export const LeftTopFrame = styled.main`
+export const Frame = ({ children }: { children: ReactNode }) => {
+  return (
+    <LeftTopFrame>
+      <RightBottomFrame>{children}</RightBottomFrame>
+    </LeftTopFrame>
+  )
+}
+
+const LeftTopFrame = styled.main`
   ${tw`relative min-h-screen`}
   z-index: 102;
 
@@ -17,7 +25,7 @@ export const LeftTopFrame = styled.main`
   }
 `
 
-export const RightBottomFrame = styled.div`
+const RightBottomFrame = styled.div`
   ${tw`relative min-h-screen`}
   z-index: 101;
 
@@ -32,11 +40,3 @@ export const RightBottomFrame = styled.div`
     z-index: 101;
   }
 `
-
-export const Frame = ({ children }: { children: ReactNode }) => {
-  return (
-    <LeftTopFrame>
-      <RightBottomFrame>{children}</RightBottomFrame>
-    </LeftTopFrame>
-  )
-}

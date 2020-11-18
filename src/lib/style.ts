@@ -28,9 +28,7 @@ export const nortionStyle = css`
   figure {
     ${tw`max-w-full md:max-w-screen-md`}
     img {
-      width: 100%;
-      height: auto;
-      max-width: 700px;
+      ${tw`w-full h-auto max-w-2xl`}
     }
     & > div {
       display: block !important; //これないとSafariで縦サイズが崩れる
