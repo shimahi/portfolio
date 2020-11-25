@@ -1,5 +1,5 @@
 import tw, { css } from 'twin.macro'
-import shimahi from 'assets/shimahi.jpg'
+import topImage from 'waterfall.png'
 
 export const Portrait = () => {
   return (
@@ -14,7 +14,7 @@ export const Portrait = () => {
         }
       `}
     >
-      <img src={shimahi} width={192} height={192} alt="me" tw="w-full h-auto md:w-48" />
+      <img src={topImage} width={192} height={192} alt="me" tw="w-full h-auto md:w-48" />
     </div>
   )
 }
