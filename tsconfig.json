@@ -19,6 +19,6 @@
     "isolatedModules": true,
     "skipLibCheck": true
   },
-  "include": ["src", "nextjs"],
+  "include": ["src", "./next-env.d.ts"],
   "exclude": ["node_modules", "dist"]
 }
