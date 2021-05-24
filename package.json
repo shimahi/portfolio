@@ -50,7 +50,7 @@
     "notion-types": "^2.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-notion-x": "^2.5.1",
+    "react-notion-x": "^4.6.2",
     "ress": "^3.0.0",
     "twin.macro": "^1.12.1"
   },
