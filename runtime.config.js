@@ -26,4 +26,4 @@ const envConfigs = {
   },
 }
 
-module.exports = process.env.NODE_ENV !== 'production' ? defaultConfig : envConfigs[projectId]
+module.exports = process.env.NODE_ENV !== 'production' ? defaultConfig : envConfigs['prod']
