@@ -38,7 +38,10 @@ export const cmsStyle = {
     mt: 4,
   },
   img: {
-    maxWidth: '600px',
+    maxWidth: {
+      base: '100%',
+      md: '600px',
+    },
   },
   ul: {
     my: 2,
