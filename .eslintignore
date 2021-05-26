@@ -1,4 +1,7 @@
 node_modules/
-src/types/graphql.ts
 *.config.js
 .eslintrc.js
+esbuild.js
+dist/*.js
+graphql.ts
+codegen.js

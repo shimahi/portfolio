@@ -1,9 +1,0 @@
-query getArticles {
-  articles {
-    id
-    Slug
-    Date
-    Published
-    Page
-  }
-}

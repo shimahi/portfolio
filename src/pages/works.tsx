@@ -1,25 +1,24 @@
-import { Layout } from 'components/_layouts'
-import { WorksTemplate } from 'components/templates'
-import { NotionAPI } from 'notion-client'
-import { ExtendedRecordMap } from 'notion-types'
+import { Layout } from 'components/layout'
+import { client } from 'lib/microcms'
+import { WorksTemplate } from 'components/templates/Works'
 
-export default function Works({ recordMap }: { recordMap: ExtendedRecordMap }) {
+export default function Index({ content }: { content: any }) {
   return (
     <Layout>
-      <WorksTemplate recordMap={recordMap} />
+      <WorksTemplate content={content} />
     </Layout>
   )
 }
 
 export async function getStaticProps() {
-  const notion = new NotionAPI({
-    authToken: process.env.NOTION_TOKEN,
-  })
-  const recordMap = await notion.getPage(process.env.WORKS_PAGE_ID)
+  const res = (await client.get({
+    endpoint: 'portfolio',
+    contentId: 'works',
+  })) as any
 
   return {
     props: {
-      recordMap,
+      content: res.content,
     },
     revalidate: 1,
   }

@@ -1,25 +1,24 @@
-import { Layout } from 'components/_layouts'
+import { Layout } from 'components/layout'
+import { client } from 'lib/microcms'
 import { IndexTemplate } from 'components/templates'
-import { NotionAPI } from 'notion-client'
-import { ExtendedRecordMap } from 'notion-types'
 
-export default function Index({ recordMap }: { recordMap: ExtendedRecordMap }) {
+export default function Index({ content }: { content: any }) {
   return (
     <Layout>
-      <IndexTemplate recordMap={recordMap} />
+      <IndexTemplate content={content} />
     </Layout>
   )
 }
 
 export async function getStaticProps() {
-  const notion = new NotionAPI({
-    authToken: process.env.NOTION_TOKEN,
-  })
-  const recordMap = await notion.getPage(process.env.TOP_PAGE_ID)
+  const res = (await client.get({
+    endpoint: 'portfolio',
+    contentId: 'top',
+  })) as any // TODO: aspidaによって明示的に型付けする
 
   return {
     props: {
-      recordMap,
+      content: res.content,
     },
     revalidate: 1,
   }

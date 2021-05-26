@@ -5,14 +5,7 @@ module.exports = {
     es6: true,
     jest: true,
   },
-  extends: [
-    'airbnb-typescript',
-    'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'plugin:react/recommended',
-    'prettier/react',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['airbnb-typescript', 'plugin:@typescript-eslint/recommended', 'plugin:react/recommended', 'prettier'],
   parserOptions: {
     project: './tsconfig.json',
     ecmaVersion: 2018,
@@ -33,6 +26,7 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'no-nested-ternary': 'off',
     'no-unused-vars': 'off',
+    'arrow-body-style': 'off',
     // @typescript-eslint
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-empty-function': 'off',
@@ -104,6 +98,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'react/require-default-props': 'off',
+    'react/prop-types': 'off',
     // react-hooks
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'error',
