@@ -1,5 +1,5 @@
 import { Layout } from 'components/layout'
-import { client } from 'lib/microcms'
+import { getArticle } from 'lib/microcms'
 import { WorksTemplate } from 'components/templates/Works'
 
 export default function Index({ content }: { content: any }) {
@@ -11,14 +11,11 @@ export default function Index({ content }: { content: any }) {
 }
 
 export async function getStaticProps() {
-  const res = (await client.get({
-    endpoint: 'portfolio',
-    contentId: 'works',
-  })) as any
+  const article = await getArticle('works')
 
   return {
     props: {
-      content: res.content,
+      content: article.content,
     },
     revalidate: 1,
   }

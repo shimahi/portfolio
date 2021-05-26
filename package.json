@@ -11,7 +11,8 @@
     "dev": "next dev",
     "start": "next start",
     "build": "next build",
-    "export": "next export"
+    "export": "next export",
+    "api:build": "aspida"
   },
   "devDependencies": {
     "@types/jest": "^26.0.23",
@@ -41,6 +42,7 @@
     "webpack": "^5.37.1"
   },
   "dependencies": {
+    "@aspida/fetch": "^1.7.0",
     "@chakra-ui/react": "^1.6.2",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
