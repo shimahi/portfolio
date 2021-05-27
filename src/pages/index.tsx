@@ -1,21 +1,21 @@
 import { Layout } from 'components/layout'
-import { getArticle } from 'lib/microcms'
+import { getPortfolio } from 'lib/microcms'
 import { IndexTemplate } from 'components/templates'
 
-export default function Index({ content }: { content: any }) {
+export default function Index({ content }: Portfolio) {
   return (
     <Layout>
-      <IndexTemplate content={content} />{' '}
+      <IndexTemplate content={content} />
     </Layout>
   )
 }
 
 export async function getStaticProps() {
-  const article = await getArticle('top')
+  const res = await getPortfolio('top')
 
   return {
     props: {
-      content: article.content,
+      content: res.content,
     },
     revalidate: 1,
   }

@@ -1,10 +1,13 @@
-const url = 'https://shimahi.microcms.io/api/v1/portfolio'
+import aspida from '@aspida/fetch'
+import api from 'aspida/$api'
+
+const baseURL = 'https://shimahi.microcms.io/api/v1'
 const config = { headers: { 'X-API-KEY': process.env.MICROCMS_API_KEY } }
 
-export const getArticle = async (id: string) => {
-  const res = await fetch(`${url}/${id}`, config)
+export const getPortfolio = async (id: string) => {
+  const _fetch = api(aspida(fetch, { baseURL }))
 
-  const body = await res.json()
+  const res = await _fetch.portfolio._id(id).$get({ config })
 
-  return body
+  return res
 }

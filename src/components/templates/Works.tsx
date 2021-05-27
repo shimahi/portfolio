@@ -2,7 +2,7 @@ import { Box } from '@chakra-ui/react'
 import { cmsStyle } from 'lib/style'
 
 type Props = {
-  content: any
+  content: string
 }
 
 export const WorksTemplate: React.FC<Props> = ({ content }) => {

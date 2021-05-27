@@ -1,8 +1,8 @@
 import { Layout } from 'components/layout'
-import { getArticle } from 'lib/microcms'
+import { getPortfolio } from 'lib/microcms'
 import { WorksTemplate } from 'components/templates/Works'
 
-export default function Index({ content }: { content: any }) {
+export default function Index({ content }: Portfolio) {
   return (
     <Layout>
       <WorksTemplate content={content} />
@@ -11,11 +11,11 @@ export default function Index({ content }: { content: any }) {
 }
 
 export async function getStaticProps() {
-  const article = await getArticle('works')
+  const res = await getPortfolio('works')
 
   return {
     props: {
-      content: article.content,
+      content: res.content,
     },
     revalidate: 1,
   }
