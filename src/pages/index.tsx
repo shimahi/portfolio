@@ -1,5 +1,5 @@
 import { Layout } from 'components/layout'
-import { getPortfolio } from 'lib/microcms'
+import { getPortfolio } from 'lib'
 import { IndexTemplate } from 'components/templates'
 
 export default function Index({ content }: Portfolio) {

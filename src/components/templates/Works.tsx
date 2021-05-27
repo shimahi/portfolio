@@ -1,5 +1,5 @@
 import { Box } from '@chakra-ui/react'
-import { cmsStyle } from 'lib/style'
+import { cmsStyle } from 'lib'
 
 type Props = {
   content: string

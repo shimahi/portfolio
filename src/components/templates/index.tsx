@@ -1,6 +1,8 @@
-import { Portrait } from 'components/atoms/Portrait'
+import { Portrait } from 'components/atoms'
 import { Box } from '@chakra-ui/react'
-import { cmsStyle } from 'lib/style'
+import { cmsStyle } from 'lib'
+
+export * from './Works'
 
 type Props = {
   content: string
