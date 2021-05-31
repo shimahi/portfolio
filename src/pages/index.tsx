@@ -10,7 +10,7 @@ export default function Index({ content }: Portfolio) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await getPortfolio('top')
 
   return {
