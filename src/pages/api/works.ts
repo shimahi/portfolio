@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next'
-import { fetchPortfolio } from './mincrocmsCinfig'
+import { fetchPortfolio } from './mincrocmsConfig'
 
 export default async (_: NextApiRequest, res: NextApiResponse) => {
   const portfolio = await fetchPortfolio('works')
