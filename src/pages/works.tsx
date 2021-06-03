@@ -10,11 +10,10 @@ export default function Index({ content }: Portfolio) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const { content } = await fetchPortfolio('works')
 
   return {
-    revalidate: 1,
     props: {
       content,
     },
