@@ -1,19 +1,13 @@
-import aspida from '@aspida/fetch'
-import api from 'aspida/$api'
-
 import getConfig from 'next/config'
 
 const {
-  serverRuntimeConfig: { cmsKey },
+  publicRuntimeConfig: { rootUrl },
 } = getConfig()
 
-const baseURL = 'https://shimahi.microcms.io/api/v1'
-const config = { headers: { 'X-API-KEY': cmsKey } }
+export const getPortfolioContent = async (id: string) => {
+  const res = await fetch(`${rootUrl}/api/${id}`)
+  const data = await res.json()
+  const { content } = data
 
-export const getPortfolio = async (id: string) => {
-  const _fetch = api(aspida(fetch, { baseURL }))
-
-  const res = await _fetch.portfolio._id(id).$get({ config })
-
-  return res
+  return content as Portfolio
 }

@@ -1,6 +1,8 @@
 const defaultConfig = {
   publicRuntimeConfig: {
     environment: process.env.NODE_ENV,
+    rootUrl: process.env.ROOT_URL,
+    apiUrl: process.env.MICROCMS_API_URL,
   },
   serverRuntimeConfig: {
     secret: process.env.SECRET,
