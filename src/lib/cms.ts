@@ -10,10 +10,11 @@ const {
 export const baseURL = apiUrl
 export const config = { headers: { 'X-API-KEY': cmsKey } }
 
-export const fetchPortfolio = async (id: string) => {
+export const fetchPortfolio = async () => {
   const _fetch = api(aspida(fetch, { baseURL }))
 
-  const res = await _fetch.portfolio._id(id).$get({ config })
+  const top = await _fetch.portfolio._id('top').$get({ config })
+  const works = await _fetch.portfolio._id('works').$get({ config })
 
-  return res
+  return { top, works }
 }

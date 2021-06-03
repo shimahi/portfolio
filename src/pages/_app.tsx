@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import { ChakraProvider } from '@chakra-ui/react'
 import { theme } from 'lib/style'
 import * as gtag from 'lib'
+import AppProvider from 'store'
 
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter()
@@ -19,9 +20,11 @@ const App = ({ Component, pageProps }: AppProps) => {
   })
 
   return (
-    <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
+    <AppProvider>
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </AppProvider>
   )
 }
 export default App
