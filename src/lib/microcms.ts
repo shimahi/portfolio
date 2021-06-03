@@ -1,8 +1,14 @@
 import aspida from '@aspida/fetch'
 import api from 'aspida/$api'
 
+import getConfig from 'next/config'
+
+const {
+  serverRuntimeConfig: { cmsKey },
+} = getConfig()
+
 const baseURL = 'https://shimahi.microcms.io/api/v1'
-const config = { headers: { 'X-API-KEY': process.env.MICROCMS_API_KEY } }
+const config = { headers: { 'X-API-KEY': cmsKey } }
 
 export const getPortfolio = async (id: string) => {
   const _fetch = api(aspida(fetch, { baseURL }))

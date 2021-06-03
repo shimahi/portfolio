@@ -4,6 +4,7 @@ const defaultConfig = {
   },
   serverRuntimeConfig: {
     secret: process.env.SECRET,
+    cmsKey: process.env.MICROCMS_API_KEY,
   },
 }
 
