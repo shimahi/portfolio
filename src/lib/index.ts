@@ -1,3 +1,3 @@
-export * from './gtag'
-export * from './style'
-export * from './microCMS'
+export * from 'lib/gtag'
+export * from 'lib/style'
+export * from 'lib/cms'
