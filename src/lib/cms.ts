@@ -1,13 +1,19 @@
 import getConfig from 'next/config'
+import aspida from '@aspida/fetch'
+import api from 'aspida/$api'
 
 const {
-  publicRuntimeConfig: { rootUrl },
+  publicRuntimeConfig: { apiUrl },
+  serverRuntimeConfig: { cmsKey },
 } = getConfig()
 
-export const getPortfolioContent = async (id: string) => {
-  const res = await fetch(`${rootUrl}/api/${id}`)
-  const data = await res.json()
-  const { content } = data
+export const baseURL = apiUrl
+export const config = { headers: { 'X-API-KEY': cmsKey } }
 
-  return content as Portfolio
+export const fetchPortfolio = async (id: string) => {
+  const _fetch = api(aspida(fetch, { baseURL }))
+
+  const res = await _fetch.portfolio._id(id).$get({ config })
+
+  return res
 }

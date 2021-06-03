@@ -1,5 +1,5 @@
 import { Layout } from 'components/layout'
-import { getPortfolioContent } from 'lib'
+import { fetchPortfolio } from 'lib'
 import { WorksTemplate } from 'components/templates'
 
 export default function Index({ content }: Portfolio) {
@@ -11,7 +11,7 @@ export default function Index({ content }: Portfolio) {
 }
 
 export async function getStaticProps() {
-  const content = await getPortfolioContent('works')
+  const { content } = await fetchPortfolio('works')
 
   return {
     revalidate: 1,

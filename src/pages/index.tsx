@@ -1,6 +1,6 @@
 import { Layout } from 'components/layout'
 import { IndexTemplate } from 'components/templates'
-import { getPortfolioContent } from 'lib'
+import { fetchPortfolio } from 'lib'
 
 export default function Index({ content }: Portfolio) {
   return (
@@ -11,7 +11,7 @@ export default function Index({ content }: Portfolio) {
 }
 
 export async function getStaticProps() {
-  const content = await getPortfolioContent('top')
+  const { content } = await fetchPortfolio('top')
 
   return {
     revalidate: 1,
