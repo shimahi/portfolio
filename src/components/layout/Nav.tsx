@@ -36,6 +36,32 @@ const LinkItem: React.FC<LinkItemProps> = ({ children, href }) => {
 }
 
 export const Nav = () => {
+  // 検索避けのためにタイトル文字列をバラバラにする
+  const siteName = 'Shimahi portfolio'
+  const chars = siteName.split('')
+  const textOrders = chars.map((_) => Math.floor(Math.random() * 1000))
+  const textOrdersSorted = textOrders.slice().sort()
+  const idxMap = textOrdersSorted.map((v) => {
+    return textOrders.findIndex((n) => n === v)
+  })
+
+  const mappedChars = idxMap.map((to, index) => {
+    return (
+      <Box
+        transform={{
+          md: 'rotate(90deg)',
+        }}
+        lineHeight={{
+          md: 0.8,
+        }}
+        key={index}
+        style={{ order: to }}
+      >
+        {chars[to]}
+      </Box>
+    )
+  })
+
   return (
     <Stack
       as="nav"
@@ -78,13 +104,14 @@ export const Nav = () => {
       </Stack>
       <Box h={{ md: 32 }} />
       <Box
+        d="flex"
         fontWeight="bold"
-        transform={{
-          md: 'rotate(90deg)',
+        flexDirection={{
+          md: 'column',
         }}
         color="lightGray"
       >
-        Shimahi portfolio
+        {mappedChars}
       </Box>
     </Stack>
   )
