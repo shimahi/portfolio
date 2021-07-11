@@ -11,7 +11,7 @@ export const Layout: React.FC = ({ children }) => {
         <title>Meminus</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box bgColor="baseColor">
+      <Box bgColor="baseColor" minHeight="100vh">
         <Frame>
           <Stack maxWidth="container.xl" mx="auto" as="main">
             <Nav />
