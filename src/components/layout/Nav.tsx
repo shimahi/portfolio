@@ -1,39 +1,39 @@
-import { Box, /* Link, */ Stack } from '@chakra-ui/react'
-// import NextLink from 'next/link'
-// import { useRouter } from 'next/router'
+import { Box, Link, Stack } from '@chakra-ui/react'
+import NextLink from 'next/link'
+import { useRouter } from 'next/router'
 
-// type LinkItemProps = {
-//   href: string
-// }
+type LinkItemProps = {
+  href: string
+}
 
-// const LinkItem: React.FC<LinkItemProps> = ({ children, href }) => {
-//   const { pathname } = useRouter()
+const LinkItem: React.FC<LinkItemProps> = ({ children, href }) => {
+  const { pathname } = useRouter()
 
-//   return (
-//     <NextLink href={href} as={href}>
-//       <Link
-//         position="relative"
-//         textAlign="center"
-//         d="block"
-//         w={16}
-//         _before={{
-//           content: '""',
-//           w: 'full',
-//           bgColor: pathname === href ? 'main' : 'none',
-//           position: 'absolute',
-//           h: 0.5,
-//           d: 'block',
-//           bottom: -2,
-//         }}
-//         _hover={{
-//           opacity: 0.6,
-//         }}
-//       >
-//         {children}
-//       </Link>
-//     </NextLink>
-//   )
-// }
+  return (
+    <NextLink href={href} as={href}>
+      <Link
+        position="relative"
+        textAlign="center"
+        d="block"
+        w={16}
+        _before={{
+          content: '""',
+          w: 'full',
+          bgColor: pathname === href ? 'main' : 'none',
+          position: 'absolute',
+          h: 0.5,
+          d: 'block',
+          bottom: -2,
+        }}
+        _hover={{
+          opacity: 0.6,
+        }}
+      >
+        {children}
+      </Link>
+    </NextLink>
+  )
+}
 
 export const Nav = () => {
   // 検索避けのためにタイトル文字列をバラバラにする
@@ -94,13 +94,10 @@ export const Nav = () => {
           base: 'row',
           md: 'column',
         }}
-        mt={{
-          md: -64,
-        }}
       >
-        {/* <LinkItem href="/">top</LinkItem>
+        <LinkItem href="/">top</LinkItem>
         <Box w={{ base: 12, md: 0 }} h={{ md: 16 }} />
-        <LinkItem href="/works">works</LinkItem> */}
+        <LinkItem href="/works">works</LinkItem>
       </Stack>
       <Box h={{ md: 32 }} />
       <Box
